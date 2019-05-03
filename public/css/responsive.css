@@ -147,7 +147,7 @@
 	.about__right_image,
 	.about-page .about__right_image {
 		bottom: 0;
-		right: 0;
+		left: 0;
 		width: 40%;
 	}
 	.about-page .about__right_image {

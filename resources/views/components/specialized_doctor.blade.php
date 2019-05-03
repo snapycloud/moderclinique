@@ -4,10 +4,10 @@
                     <div class="col-12">
                         <div class="specialized_doctor_title">
                             <div class="title_left">
-                                <h1>Doctors</h1>
+                                <h1>کاشت مو</h1>
                             </div>
                             <div class="title_right section__title">
-                                <h2>Our specialized doctors</h2>
+                                <h2>ترمیم مو به روش </h2>
                             </div> 
                         </div>
                         <div class="doctor_tab_inner">
@@ -22,9 +22,9 @@
                                                 <h2>Dr. Linda Freeman</h2>
                                                 <span>Neurologist</span>
                                             </div>
-                                            <p>Dr Linda Freemanis one of the best Nurologiest in Bangladesh, In the world, In the Galaxy.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                                            <p>HRTترمیم مو به روش HRT تنها روش استاندارد ترمیم مو می باشد که تا به امروز معرفی شده است در این روش دیگر نیازی به بانک موی فرد نیست و مناسب ترین و بهترین روش برای افرادی است که بانک موی مناسبی ندارند و یا دارای بیماری خاصی می باشند موهای آن 100% طبیعی بوده و در یک جلسه انجام می شوداطلاعات </p>
                                             <div class="contact_btn">
-                                                <a href="doctor-details.html">Contact Me</a>
+                                                <a href="doctor-details.html">تما با ما</a>
                                             </div>
                                         </div>
                                     </div>

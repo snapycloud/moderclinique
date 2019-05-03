@@ -2,11 +2,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-12">
-                        <div class="sepcial_banner_content">
-                            <h4>Special Offer !!</h4>
-                            <h2>Get 40% off on Every Dental <br> Checkups.</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                            <a href="#">Learn More</a>
+                        <div class="sepcial_banner_content text-right">
+                            <h4>کاشت ابرو :</h4>
+                            <p>کاشت ابرو با تكنيك جديد FUE روش در یک جلسه ، كاملاً بدون درد ، عوارض و بدون كوتاهي موهاي شخص در قسمت برداشت انجام ميشود و از مهمترین تفاوت هاي آن با روش های دیگر استفاده از تيم مجرب و انجام ان با خواب طبيعي ابرو ميباشد كه ديگر همانند روش هاي رايج و قديمي بصورت سيخ سيخ و نامنظم نخواهد بود</p>
+                            <a href="#">درباره ما</a>
                         </div>
                     </div>
                 </div>

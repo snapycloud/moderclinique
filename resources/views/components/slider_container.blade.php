@@ -20,7 +20,7 @@
                                 <div class="slider-content slider-text-animation">
                                     <h1>کاشت مو برای بانوان</h1>
                                     <h2>بهترین کیفیت</h2>
-                                    <a href="#">از پزشکان ما مشاوره بگیری</a>                                    
+                                    <a href="#">از پزشکان ما مشاوره بگیرید</a>                                    
                                 </div>
                             </div>
                         </div>  

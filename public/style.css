@@ -1,50 +1,41 @@
-/*--------------
-  Template Name:  Curex - Medical Clinic Service Bootstrap 4 Template
-  Description: Curex is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design Medical, Clinic any other purposes websites.
-  Version: 1.0.0 
+@font-face {
+    font-family: "Iran Yekan Light";
+    src: url("fonts/yekan/light/iran-yekan-light.eot");
+    src: url("fonts/yekan/light/iran-yekan-light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/yekan/light/iran-yekan-light.woff") format("woff"),
+    url("fonts/yekan/light/iran-yekan-light.woff2") format("woff2"),
+    url("fonts/yekan/light/iran-yekan-light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Iran Yekan";
+    src: url("fonts/yekan/normal/iran-yekan-normal.eot");
+    src: url("fonts/yekan/normal/iran-yekan-normal.eot?#iefix") format("embedded-opentype"),
+    url("fonts/yekan/normal/iran-yekan-normal.woff") format("woff"),
+    url("fonts/yekan/normal/iran-yekan-normal.woff2") format("woff2"),
+    url("fonts/yekan/normal/iran-yekan-normal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Iran Yekan Bold";
+    src: url("fonts/yekan/bold/iran-yekan-bold.eot");
+    src: url("fonts/yekan/bold/iran-yekan-bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/yekan/bold/iran-yekan-bold.woff") format("woff"),
+    url("fonts/yekan/bold/iran-yekan-bold.woff2") format("woff2"),
+    url("fonts/yekan/bold/iran-yekan-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal
+}
 
 
-------------
-  
-  CSS INDEX
-  ===================
-
-  01. Google fonts
-  02. Scroll To Top
-  03. Header css here
-  04. Slider css here
-  05. Footer css here 
-  06. Support Area
-  07. Try Solve Area
-  08. Gallery Area
-  09. Appoinment Area
-  10. Therapy Provide Area
-  11. Testimonial Area
-  12. Blog Area
-  13. Subscribe Area
-  14. Bradcaump Area
-  15. Pagenation Area
-  16. Service Area
-  17. Our Team Area
-  18. Our Success Area
-  19. Blog Details Area
-  20. Contact Area
-  21. Single Service Area
-  22. Mobile Menu Css here
-  23. Doctor Profile css
-  23. Error Page css here
-
----------*/
-
-
-/*----------------------------------------*/
-/*  1. Google fonts
-/*----------------------------------------*/
-/*@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700%7CMontserrat:300,400,500,600,700,800');*/
-
-/*---------------------------------------
-  02. Scroll To Top
-----------------------------------------*/
+p, a, h2, ul, li, span{
+  font-family: "Iran Yekan Bold";
+  direction: rtl;
+}
 #scrollUp {
 	border-radius: 2px;
 	bottom: 80px;
@@ -140,7 +131,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-family: "Lato",sans-serif;
+	font-family: "Iran Yekan Light",sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	height: 99px;
@@ -572,10 +563,12 @@ color: #ea4335;
 }
 .slider-content h1, .slider-content h2 {
 	color: #ffffff;
-	font-size: 85px;
+	/*font-size: 85px;*/
 	font-weight: bold;
 	text-transform: capitalize;
 	line-height: 95px;
+  text-shadow: 4px 5px 0px rgba(0,0,0, 0.5);
+  font-family: "Iran Yekan Bold";
 }
 .slider-content.slider-text-animation > a {
   background: #001430 none repeat scroll 0 0;
@@ -590,6 +583,7 @@ color: #ea4335;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
+   font-family: "Iran Yekan Bold";
 }
 .slider-content.slider-text-animation > a::before {
   background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#26aef9), to(#22f285)) repeat scroll 0 0;
@@ -924,9 +918,10 @@ color: #ea4335;
 	color: #525252;
 	font-size: 20px;
 	font-weight: bold;
-	letter-spacing: 3px;
+	ـletter-spacing: 3px;
 	margin-bottom: 25px;
 	line-height: 18px;
+  font-family: "Iran Yekan Bold"
 }
 .htc__support__inner h2 {
 	color: #001430;
@@ -936,14 +931,16 @@ color: #ea4335;
 	margin-bottom: 35px;
 	padding-bottom: 30px;
 	position: relative;
+  font-family: "Iran Yekan"
 }
 .htc__support__content {
   margin-top: 63px;
   padding-right: 50px;
+  font-family: "Iran Yekan Light"
 }
 .about__right_image {
   position: absolute;
-  right: -210px;
+  left: -210px;
 }
 .about-page .about__right_image {
   position: absolute;
@@ -961,6 +958,7 @@ color: #ea4335;
     height: 4px;
     position: absolute;
     width: 75px;
+    right: 0;
 }
 .htc__support__inner h3 {
     color: #505050;
@@ -1408,13 +1406,16 @@ color: #ea4335;
   border-style: solid;
   border-width: 1px;
   color: #001430;
-  font-family: "Lato",sans-serif;
+  font-family: "Iran Yekan",sans-serif;
+  text-align: right;
   height: 55px;
   padding: 0 40px;
 }
 .htc__app__box label {
     color: #606060;
     font-size: 16px;
+     font-family: "Iran Yekan",sans-serif;
+     text-align: right;
 }
 .htc__app__box select {
   -moz-appearance: none;
@@ -1428,10 +1429,13 @@ color: #ea4335;
   color: #999;
   height: 55px;
   padding: 0 35px;
+   font-family: "Iran Yekan",sans-serif;
+   text-align: right;
 }
 .htc__app__box input::-moz-placeholder {
   opacity: 0.4;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  text-align: right;
 }
 .htc__app__box input::-webkit-input-placeholder {
   opacity: 0.7;
@@ -1440,6 +1444,7 @@ color: #ea4335;
 .htc__app__box select option {
   color: #333333;
   padding: 8px;
+  text-align: right;
 }
 .htc__app__box.message textarea {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -1448,6 +1453,8 @@ color: #ea4335;
   margin-top: 40px;
   min-height: 130px;
   padding: 22px 40px;
+  font-family: "Iran Yekan";
+  text-align: right;
 }
 .htc__app__box.message textarea::-webkit-input-placeholder{
     opacity: 0.7;
@@ -1479,7 +1486,7 @@ color: #ea4335;
   border-radius: 30px;
   color: #ffffff;
   display: inline-block;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Iran Yekan Bold",sans-serif;
   font-size: 16px;
   font-weight: 500;
   height: 55px;
@@ -2188,6 +2195,8 @@ color: #ea4335;
   height: 55px;
   padding: 0 40px;
   width: 500px;
+  font-family: "Iran yekan Bold";
+  direction: rtl;
 }
 .newsletter__form .input__box input[type="email"]:focus {
   background: #f7fbff none repeat scroll 0 0;
@@ -2211,13 +2220,14 @@ color: #ea4335;
 	height: 100%;
 	line-height: 1;
 	position: absolute;
-	right: 0;
+	left: 0;
 	top: 0;
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 	width: 160px;
 	z-index: 9;
 	cursor: pointer;
+  font-family: "Iran Yekan Bold"
 }
 .newsletter__form .input__box button:before {
     background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#26aef9), to(#22f285)) repeat scroll 0 0;
@@ -3976,8 +3986,8 @@ footer.footer_area {
 .sepcial_banner_content > h4 {
   color: #001430;
   font-size: 20px;
+  direction: rtl;
   font-weight: 500;
-  letter-spacing: 3px;
 }
 
 .sepcial_banner_content > h2 {
@@ -4017,6 +4027,9 @@ footer.footer_area {
 	font-size: 16px;
 	line-height: 26px;
 	padding: 20px 40px;
+  font-family: "Iran Yekan Light";
+  direction: rtl;
+  text-align: justify;
 }
 .singel_project {
     background: #ffffff none repeat scroll 0 0;
@@ -4153,7 +4166,7 @@ footer.footer_area {
     line-height: 27px;
 }
 .blog__post_title {
-  border-bottom: 1px solid #cdecfe;
+  _border-bottom: 1px solid #cdecfe;
   margin-bottom: 28px;
   padding-bottom: 25px;
   padding-left: 40px;

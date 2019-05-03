@@ -35,7 +35,7 @@
         @include('components.welcome_services')
         @include('components.appointment')
         @include('components.welcome_special_banner')
-        @include('components.specialized_doctor')
+        @include('components.welcome_health_news')
         @include('components.subscribe_area')
         
         <footer class="footer_area">
@@ -43,64 +43,63 @@
                 <div class="container">
                     <div class="row">
                        
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-2 col-md-2">
                             <div class="single_footer widget footer_1">
-                                <div class="single_footer_title">
-                                    <h2>Links</h2>
+                                <div class="single_footer_title text-right" >
+                                    <h2>پیوندها</h2>
                                 </div>
-                                <div class="single_footer_menu">
+                                <div class="single_footer_menu text-right">
                                     <ul>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">Appoinment</a></li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Inquary</a></li>
+                                        <li><a href="#">صفحه اصلی</a></li>
+                                        <li><a href="#">درباره ما</a></li>
+                                        <li><a href="#">نوبتگیری</a></li>
+                                        <li><a href="#">خدمات ما</a></li>
+                                        <li><a href="#">سوالات متداول</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-3 col-md-3">
                             <div class="single_footer widget footer_2">
-                                <div class="single_footer_title">
-                                    <h2>Solutions</h2>
+                                <div class="single_footer_title text-right">
+                                    <h2>دراه کارها</h2>
                                 </div>
-                                <div class="single_footer_menu">
+                                <div class="single_footer_menu text-right">
                                     <ul>
-                                        <li><a href="#">Aging And addiction</a></li>
-                                        <li><a href="#">Back pain relief</a></li>
-                                        <li><a href="#">Have Trouble Sleep</a></li>
-                                        <li><a href="#">Therapy at Home</a></li>
-                                        <li><a href="#">Bent Fingers</a></li>
+                                        <li><a href="#">کاشت مو</a></li>
+                                        <li><a href="#">کاشت ریش و سبیل</a></li>
+                                        <li><a href="#">کاشت ابرو</a></li>
+                                        <li><a href="#">مزوتوراپی</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div> 
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-3 col-md-2">
                             <div class="single_footer widget footer_3 ">
-                                <div class="single_footer_title">
-                                    <h2>Support</h2>
+                                <div class="single_footer_title text-right">
+                                    <h2>پشتیبانی</h2>
                                 </div>
-                                <div class="single_footer_menu">
+                                <div class="single_footer_menu text-right">
                                     <ul>
-                                        <li><a href="#">Contact us</a></li>
-                                        <li><a href="#">Care Help Line</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Site map</a></li>
+                                        <li><a href="#">با ما در تماس باشید</a></li>
+                                        <li><a href="#">راهنمای مراقبت</a></li>
+                                        <li><a href="#">پشیتبانی</a></li>
+                                        <li><a href="#">درباره ما</a></li>
+                                        <li><a href="#">سایت مپ</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div> 
-                        <div class="col-lg-2 col-md-6">
+                        <div class="col-lg-4 col-md-4">
                             <div class="single_footer widget footer_4">
-                                <div class="single_footer_title">
-                                    <h2>Contact</h2>
+                                <div class="single_footer_title text-right">
+                                    <h2>تماس با ما</h2>
                                 </div>
-                                <div class="single_footer_desc">
-                                    <p>125, Las Vegus, Main City, Street lane, USA</p>
-                                    <p>+12345 365 789 <br> +01235 789 654 </p>
-                                    <p>info@example.com<br> www.example.com </p>
+                                <div class="single_footer_desc text-right">
+                                    <p>آدرس: تهران - سعادت آباد بلواردریا بین خیابان گلها و خیابان رامشه پلاک ۷۰ طبقه ۳</p>
+                                    <p>خطوط ویژه <br> ۰۲۱-۸۷۷۰۰۰۰۰<br>۰۲۱-۸۸۰۸۰۹۱۵ </p>
+                                    <p>پاسخگوی ۲۴ ساعته ۰۲۱-۸۸۵۷۲۵۴۱<br>۰۲۱-۸۸۵۷۲۵۴۱ </p>
                                 </div>
                             </div>
                         </div>
@@ -117,9 +116,8 @@
                                     <p>Copyright © <a href="#">curex</a> All Rights Reserves </p>
                                 </div>
                                 <div class="social__icon">
-                                    <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+                                    <a href="https://www.instagram.com/modernclinique/?hl=en" target="_blank"><i class="zmdi zmdi-email"></i></a>
+                                    <a href="https://api.whatsapp.com/send?text=درخواست مشاور&phone=09032324184"><i class="zmdi zmdi-instagram"></i></a>
                                     <a href="#"><i class="zmdi zmdi-whatsapp"></i></a>
                                 </div>
                             </div>

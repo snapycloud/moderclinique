@@ -3,7 +3,7 @@
                     <div class="row">
                         <div class="col-xl-8 offset-xl-2 col-lg-12 col-12">
                             <div class="section__title text-center">
-                                <h2>Make an Appointment</h2>
+                                <h2>درخواست مشاوره</h2>
                             </div>
                             <div class="htc__appoinment__wrap">
                                 <div class="htc__appoinment__form">
@@ -11,21 +11,18 @@
                                         <div class="htc__app__box__inner">
                                             <div class="htc__app__box">
                                                 <div class="input_inner">
-                                                    <input type="text" placeholder="Type Your Full Name">
+                                                    <input type="text" placeholder="نام خود را وارد کنید">
                                                 </div>
                                             </div>
                                          </div>
                                         <div class="htc__app__box__inner">
                                             <div class="htc__app__box">
-                                                <input type="email" placeholder="Type Your E-mail">
+                                                <input type="email" placeholder="شماره همراه خود را وارد کنید">
                                             </div>
                                         </div>
                                         <div class="htc__app__box__inner">
                                             <div class="htc__app__box">
-                                                <input type="text" placeholder="Consulting Subject">
-                                            </div>
-                                            <div class="htc__app__box psy__calendar">
-                                                <input class="date__dropdown" placeholder="Appoinment Date" type="text" id="datepicker">
+                                                <input type="text" placeholder="مشاوره موضوع">
                                             </div>
                                         </div> 
                                         <div class="htc__app__box__inner">
@@ -33,33 +30,20 @@
                                             <div class="htc__app__box doctor_select">
                                                 <div class="doctor_select_inner">
                                                     <select>
-                                                        <option value="1" selected>Department</option>
-                                                        <option value="2" >Diabetes</option>
-                                                        <option value="3" >Pathology</option>
-                                                        <option value="4" >Neonatology</option>
-                                                        <option value="5" >Surgery</option>
-                                                        <option value="5" >Gastroenterology </option>
+                                                        <option value="1" selected>کاشت مو</option>
+                                                        <option value="2" >کاشت ریش و سبیل</option>
+                                                        <option value="3" >کاشت ابرو</option>
+                                                        <option value="4" >مزوتراپی</option>
                                                     </select>
                                                 </div>
                                             </div> 
-                                            <div class="htc__app__box doctor_select">
-                                                <div class="doctor_select_inner">
-                                                    <select>
-                                                        <option value="1" selected>Select Doctor</option>
-                                                        <option value="2" >Dr. Christine Roberts</option>
-                                                        <option value="3" >Dr. Jacob Torres</option>
-                                                        <option value="4" >Dr. Diane Guerrero</option>
-                                                        <option value="5" >Dr. Justin Howard</option>
-                                                    </select>
-                                                </div>
-                                            </div>
                                         </div>
                                         <div class="appoinment_message">
                                             <div class="htc__app__box message">
-                                               <textarea name="Message" placeholder="Type Additional Message"></textarea>
+                                               <textarea name="Message" placeholder="توضیحات"></textarea>
                                             </div>
                                             <div class="ht__appoin__btn">
-                                                <button type="submit">Send Request</button>
+                                                <button type="submit">ثبت درخواست</button>
                                             </div>
                                         </div>
                                     </form>
