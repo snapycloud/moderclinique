@@ -563,7 +563,7 @@ color: #ea4335;
 }
 .slider-content h1, .slider-content h2 {
 	color: #ffffff;
-	/*font-size: 85px;*/
+	font-size: 85px;
 	font-weight: bold;
 	text-transform: capitalize;
 	line-height: 95px;
@@ -2357,10 +2357,9 @@ color: #ea4335;
 }
 .bradcaump__title h2 {
 	color: #343940;
-	font-size: 20px;
+	font-size: 40px;
 	font-weight: 800;
 	text-transform: uppercase;
-	letter-spacing: 3px;
 }
 .bradcaump__title {
     position: relative;
@@ -3425,10 +3424,14 @@ h2.psy__blog__title {
   outline: medium none;
   padding: 0 20px;
   width: 100%;
+  font-family: "Iran Yekan Bold";
+  direction: rtl;
 }
 .contact-box.name_email .contact-box {
     margin: 0 13px;
     width: 50%;
+      font-family: "Iran Yekan Bold";
+  direction: rtl;
 }
 .contact-box.name_email {
     -webkit-box-pack: justify;
@@ -3446,6 +3449,8 @@ h2.psy__blog__title {
   border-radius: 10px;
   min-height: 133px;
   padding: 10px 20px;
+    font-family: "Iran Yekan Bold";
+  direction: rtl;
 }
 .contact-box.message textarea::-moz-placeholder,.contact-box input::-moz-placeholder{
     opacity: 0.7;
@@ -3477,6 +3482,8 @@ h2.psy__blog__title {
     padding: 0 40px;
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
+      font-family: "Iran Yekan Bold";
+  direction: rtl;
 }
 .contact-btn {
   margin-top: -32px;
@@ -5308,11 +5315,18 @@ blockquote {
   font-weight: 500;
   line-height: 28px;
   margin-bottom: 5px;
+  direction: rtl;
+  font-family: "Iran Yekan Light" !important;
+  text-align: right;
 }
 .doctor_title p {
   color: #001430;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
+  direction: rtl;
+  font-family: "Iran Yekan Light" !important;
+  text-align: right;
+
 }
 .doctor_title {
   margin-bottom: 20px;
@@ -5320,6 +5334,9 @@ blockquote {
 .doctor_short_info p {
   color: #001430;
   line-height: 26px;
+  direction: rtl;
+  font-family: "Iran Yekan Light";
+  text-align: right;
 }
 .doctor_skilled_area {
   margin-top: 40px;
@@ -5356,6 +5373,9 @@ blockquote {
 	color: #001430;
 	font-size: 18px;
 	line-height: 30px;
+  font-family: "Iran Yekan Light";
+  text-align: right;
+  direction: rtl;
 }
 .doctor_description_inner {
 	margin-top: 92px;

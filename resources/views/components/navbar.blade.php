@@ -11,17 +11,17 @@
                         <div class="col-md-9 col-lg-9 d-none d-lg-block">
                             <nav class="main__menu__nav ">
                                 <ul class="main__menu">
-                                    <li class="drop"><a href="index.html">صفحه اصلی</a></li>
-                                    <li class="drop"><a href="service.html">خدمات</a>
+                                    <li class="drop"><a href="{{ route('welcome') }}">صفحه اصلی</a></li>
+                                    <li class="drop"><a href="{{ route('about') }}">خدمات</a>
                                         <ul class="dropdown">
                                             <li><a href="service.html">Service</a></li>
                                             <li><a href="single-services.html">Single Service </a></li>
                                         </ul>
                                     </li>
-                                    <li class="drop"><a href="blog.html">مقالات</a></li>
-                                    <li class="drop"><a href="about-us.html">سوالات متداول</a></li>
-                                    <li class="drop"><a href="about-us.html">درباره ما</a></li>
-                                    <li class="drop"><a href="about-us.html">تماس با ما</a></li>
+                                    <li class="drop"><a href="{{ route('about') }}">مقالات</a></li>
+                                    <li class="drop"><a href="{{ route('about') }}">سوالات متداول</a></li>
+                                    <li class="drop"><a href="{{ route('about') }}">درباره ما</a></li>
+                                    <li class="drop"><a href="{{ route('contact') }}">تماس با ما</a></li>
                                 </ul>
                             </nav>
                         </div>

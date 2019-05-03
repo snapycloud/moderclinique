@@ -15,7 +15,7 @@
                 scrollwheel: false,
 
                 // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(23.7286, 90.3854), // New York
+                center: new google.maps.LatLng(35.763770, 51.288649), // New York
 
                 // How you would like to style the map. 
                 // This is where you would paste any style found on Snazzy Maps.
@@ -199,9 +199,9 @@
 
             // Let's also add a marker while we're at it
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(23.7286, 90.3854),
+                position: new google.maps.LatLng(35.733538, 51.868857),
                 map: map,
-                title: 'Psychological!',
+                title: 'مدرن کلینیک',
                 icon: 'images/icons/map.png',
                 animation:google.maps.Animation.BOUNCE
 
