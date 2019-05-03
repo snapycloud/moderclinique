@@ -3,17 +3,15 @@
                     <div class="row ">
                         <div class="col-lg-6 col-md-8 col-12">
                             <div class="ht__header__top__left">
-                                <p><span><i class="zmdi zmdi-phone"></i></span>+88 011 2225 555 </p>
-                                <p><span><i class="zmdi zmdi-alarm-check"></i></span>Mon to sat 07 am to 12 am</p>
+                                <p><span><i class="zmdi zmdi-phone"></i></span>۰۲۱-۸۷۷۰۰۰۰۰</p>
+                                <p><span><i class="zmdi zmdi-alarm-check"></i></span>همه روزه ۸:۰۰ صبح الی ۹:۰۰ شب </p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-4 col-12">
                             <div class="ht__header__top__right">
                                 <div class="social_icon">
-                                    <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-whatsapp"></i></a>
+                                    <a href="https://telegram.me/ModernClinique" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                                    <a href="https://telegram.me/ModernClinique" target="_blank"><i class="fa fa-telegram"></i></a>
                                 </div>
                             </div>
                         </div>

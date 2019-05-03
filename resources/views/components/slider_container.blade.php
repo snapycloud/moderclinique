@@ -5,9 +5,9 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="slider-content slider-text-animation">
-                                    <h1>Better life needs</h1>
-                                    <h2>better care</h2>
-                                    <a href="#">Meet Our Doctors</a>                                    
+                                    <h1>کاشت مو برای بانوان</h1>
+                                    <h2>بهترین کیفیت</h2>
+                                    <a href="#">از پزشکان ما مشاوره بگیری</a>                                    
                                 </div>
                             </div>
                         </div>  
@@ -18,9 +18,9 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="slider-content slider-text-animation">
-                                    <h1>Better life needs</h1>
-                                    <h2>better care</h2>
-                                    <a href="#">Meet Our Doctors</a>                                    
+                                    <h1>کاشت مو برای بانوان</h1>
+                                    <h2>بهترین کیفیت</h2>
+                                    <a href="#">از پزشکان ما مشاوره بگیری</a>                                    
                                 </div>
                             </div>
                         </div>  
@@ -31,9 +31,9 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="slider-content slider-text-animation">
-                                    <h1>Better life needs</h1>
-                                    <h2>better care</h2>
-                                    <a href="#">Meet Our Doctors</a>                                    
+                                    <h1>کاشت مو برای بانوان</h1>
+                                    <h2>بهترین کیفیت</h2>
+                                    <a href="#">از پزشکان ما مشاوره بگیری</a>                                    
                                 </div>
                             </div>
                         </div>  

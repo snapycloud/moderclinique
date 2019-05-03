@@ -40,7 +40,7 @@
 /*----------------------------------------*/
 /*  1. Google fonts
 /*----------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700%7CMontserrat:300,400,500,600,700,800');
+/*@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700%7CMontserrat:300,400,500,600,700,800');*/
 
 /*---------------------------------------
   02. Scroll To Top
@@ -130,6 +130,7 @@
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    direction: rtl;
 }
 .main__menu > li > a {
 	-webkit-box-align: center;
@@ -554,7 +555,9 @@ color: #ea4335;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  left: 15px;
+  right: 15px;
+  direction: rtl;
+  text-align: right;
 }
 .slider-wrapper.bg-opacity::before {
   background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#26aef9), to(#22f285)) repeat scroll 0 0;
