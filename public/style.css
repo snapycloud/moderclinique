@@ -355,7 +355,7 @@ color: #ea4335;
   background: #ffffff none repeat scroll 0 0;
   -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 0px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
-  left: 0;
+  _left: 0;
   margin: 0;
   opacity: 0;
   padding: 0;
@@ -394,11 +394,11 @@ color: #ea4335;
   background: #ffffff none repeat scroll 0 0;
   color: #001430;
   display: block;
-  font-family: "Lato",sans-serif;
-  font-size: 15px;
+  font-family: "Iran Yekan Light",sans-serif;
+  font-size: 18px;
   font-weight: 400;
   padding: 10px 12px;
-  text-align: left;
+  text-align: right;
   text-decoration: none;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease 0s;
@@ -1410,6 +1410,7 @@ color: #ea4335;
   text-align: right;
   height: 55px;
   padding: 0 40px;
+  direction: rtl;
 }
 .htc__app__box label {
     color: #606060;
@@ -1431,6 +1432,7 @@ color: #ea4335;
   padding: 0 35px;
    font-family: "Iran Yekan",sans-serif;
    text-align: right;
+   direction: rtl;
 }
 .htc__app__box input::-moz-placeholder {
   opacity: 0.4;
@@ -1453,8 +1455,9 @@ color: #ea4335;
   margin-top: 40px;
   min-height: 130px;
   padding: 22px 40px;
-  font-family: "Iran Yekan";
+  font-family: "Iran Yekan";`
   text-align: right;
+  direction: rtl;
 }
 .htc__app__box.message textarea::-webkit-input-placeholder{
     opacity: 0.7;
@@ -5594,4 +5597,263 @@ blockquote {
 	display: inline-block;
 	line-height: 45px;
 	margin-top: 25px;
+}
+
+.alert {
+    font-family: "Iran Yekan",sans-serif;
+   text-align: right;
+   direction: rtl;
+}
+
+
+
+
+
+
+
+
+.menu{
+  --uiMenuCircleSize: var(--menuCircleSize, 100px);
+  --uiMenuCircleBgColor: var(--menuCircleBgColor, currentColor);
+  --uiMenuHamburgerSize: var(--menuHamburgerSize, 20px);
+  --uiMenuHamburgerBgColor: var(--menuHamburgerBgColor, #fff);
+  --rButtonFontSize: var(--uiMenuHamburgerSize);
+  
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+}
+
+.menu__nav{
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+
+  transition: opacity .2s ease-out;
+  opacity: 0;
+
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.menu__list{
+  width: 100%;
+  max-height: 100%;
+  display: none;
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* hamburger */
+
+.hamburger{
+  width: 1em;
+  height: .5em;
+  font-size: var(--uiMenuCircleSize);
+  flex: none;
+  
+  position: relative;
+  line-height: 0;
+  text-align: center;
+  background: #001430;
+  color: #001430;
+}
+
+.hamburger:before{
+  content :"";
+  width: 1em;
+  height: 1em;
+  background-color: var(--uiMenuCircleBgColor);
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: -.5em;
+  left: calc(50% - .5em);
+
+  will-change: width, height;
+  transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+              width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+              height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+}
+
+.hamburger__button{
+  width: 1.4em;
+  height: 1em;
+  
+  position: relative;
+  text-indent: -9999px;
+  z-index: 2;
+}
+
+.hamburger__button:before, .hamburger__button:after, .hamburger__label{
+  width: 100%;
+  height: .2em;
+  border-radius: 5px;
+  background-color: var(--uiMenuHamburgerBgColor);
+
+  position: absolute;
+  left: 0;
+  
+  transition-timing-function: ease;
+  transition-duration: .15s;  
+}
+
+.hamburger__button:before, .hamburger__button:after{
+  content:"";
+  transition-property: transform;
+}
+
+.hamburger__button:before{
+  top: 0;
+}
+
+.hamburger__button:after{
+  bottom: 0;
+}
+
+.hamburger__label{
+  top: calc(50% - .1em);
+  transition-property: transform, opacity;
+}
+
+/* focused state */
+
+.hamburger__button:focus{
+  outline: none;
+}
+
+/* activated state */
+
+.menu_activated{
+  height: 100%;
+      background: #001430;
+    color: #001430;
+}
+
+.menu_activated .menu__nav{
+  height: 100%;
+  opacity: 1;
+background: #001430;
+color: white;
+  will-change: opacity;
+  transition-duration: .2s;
+  transition-delay: .3s;
+}
+
+.menu_activated .hamburger:before{
+  width: 100vmax;
+  height: 100vmax;
+  transform: translate3d(-50vh, -50vh, 0) scale(5);
+  transition-duration: 1s;
+}
+
+.menu_activated .menu__list{
+  display: block;
+}
+
+.menu_activated .hamburger__button:before{
+  top: 50%;
+  transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+.menu_activated .hamburger__button:after{
+  transform: translate3d(0, -50%, 0) rotate(135deg);
+  top: 50%;
+}
+
+.menu_activated .hamburger__label{
+  transform: rotate(-45deg) translate3d(-.285em,-.3em, 0);
+  opacity: 0;
+}
+
+
+/*
+
+The component will reset button browser styles
+
+*/
+
+
+
+.r-button{
+
+--uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
+--uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
+--uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
+--uirButtonBorderStyle: var(--rButtonBorderWidth, solid);
+--uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
+--uirButtonFontFamily: var(--rButtonFontFamily, inherit);
+--uirButtonFontSize: var(--rButtonFontSize,  inherit);
+--uirButtonColor: var(--rButtonColor);
+
+    background-color: var(--uirButtonBackgroundColor);
+
+    padding: var(--uirButtonPadding);
+
+    border-width: var(--uirButtonBorderWidth);
+    border-style: var(--uirButtonBorderStyle);
+    border-color: var(--uirButtonBorderColor);
+
+    cursor: pointer;
+
+    font-family: var(--uirButtonFontFamily);
+    font-size: var(--uirButtonFontSize);
+/*    color: var(--uirButtonColor);*/
+}
+
+
+.r-button::-moz-focus-inner,
+
+.r-button[type="button"]::-moz-focus-inner,
+
+.r-button[type="reset"]::-moz-focus-inner,
+
+.r-button[type="submit"]::-moz-focus-inner {
+
+    border-style: none;
+
+    padding: 0;
+
+}
+
+
+.r-link{
+    --uirLinkDisplay: var(--rLinkDisplay, inline-block);
+    --uirLinkColor: var(--rLinkColor);
+    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+    display: var(--uirLinkDisplay) !important;
+    color: var(--uirLinkColor) !important;
+    text-decoration: var(--uirLinkTextDecoration) !important;
+}
+
+.r-list{
+    --uirListPaddingLeft: var(--rListPaddingLeft, 0);
+    --uirListMarginTop: var(--rListMarginTop, 0);
+    --uirListMarginBottom: var(--rListMarginBottom, 0);
+    --uirListListStyle: var(--rListListStyle, none);
+
+    padding-left: var(--uirListPaddingLeft) !important;
+    margin-top: var(--uirListMarginTop) !important;
+    margin-bottom: var(--uirListMarginBottom) !important;
+    list-style: var(--uirListListStyle) !important;
+}
+
+.hamburger {
+  display: none;
+}
+.list-group-item {
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
 }

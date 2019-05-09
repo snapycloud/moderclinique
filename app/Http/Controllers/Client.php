@@ -6,8 +6,34 @@ use Illuminate\Http\Request;
 
 class Client extends Controller
 {
+
     public function postConsultation(Request $req)
     {
-    	dd($req->all());
+    	$req->validate([
+    		'name' => 'required|max:255',
+    		'phoneNumber' => 'required|regex:/(۰۹)[۰-۹]{8}/|regex:/(09)[0-9]{8}/',
+    		'emailAddress' => ''
+    	]);
+    	// get first and last name form name column
+    	$data = $req->all();
+    	$name = explode(" ", $data['name']);
+    	if(count($name) == 2) {
+    		$data['firstName'] = $name[0];
+    		$data['lastName'] = $name[1];
+    	}
+    	
+    	return $this->api()->request('POST', 'lead', $req->all());
+    }
+
+    public function traverseFarsi($str)
+    {
+    	$farsi_chars = [
+			'۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'
+		];
+       	$latin_chars = [
+       		'0', '1','2','3','4','5','6','7','8','9'
+       	];
+
+        return str_replace($farsi_chars, $latin_chars, $str);
     }
 }

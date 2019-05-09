@@ -124,9 +124,32 @@
             <!-- End Copyright Area -->
         </footer>
         <!-- End Footer Area -->
-        
+        <div class="menu">
+  <nav class="menu__nav">
+    <div class="container row" style="top: 10px;position: absolute;left: 15px;">
+  <div class="col-12">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">در خواست نوبت</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">درخواست مشاوره</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">پیشنهادات و انتقادات</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">آدرس مطب روی نقشه</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">واتسپ</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">تلکرام</a>
+    </div>
+  </div>
+</div>
+  </nav>
+  <div class="hamburger">
+    <button class="r-button hamburger__button menu__toggle">
+      <span class="hamburger__label">Open menu</span>
+    </button>
+  </div>  
+</div>
         
     </div>
+
+
+
     <!-- Body main wrapper end -->
 
     <!-- Placed js at the end of the document so the pages load faster -->
@@ -138,10 +161,37 @@
     <script src="{{ asset('js/plugins.js') }}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"></script>
     <script src="{{ asset('js/map.js') }}"></script>
-    <script src="{{ asset('js/animatedModal.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+<script>
+    (function(){
+  'use strict';
 
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+    }
+    
+    toggleMenuState(className) {      
+      if (typeof className !== 'string' || className.length === 0){
+        return console.log('you did not give the class name for the toggleState function');
+      } 
+      return  this.menuNode.classList.toggle(className);
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+  
+  function callMenuToggle() {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
+})();
+</script>
 </body>
 
 </html>

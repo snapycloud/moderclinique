@@ -1808,6 +1808,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -1821,16 +1830,26 @@ __webpack_require__.r(__webpack_exports__);
         email: '',
         department: ''
       },
-      info: ''
+      info: '',
+      error: false,
+      success: false,
+      errors: false
     };
   },
   methods: {
     onSubmit: function onSubmit() {
       var _this = this;
 
-      console.log(this.data);
+      var self = this;
       axios.post('/api/consultation/', this.data).then(function (response) {
-        return _this.info = response;
+        _this.info = response;
+        _this.error = false;
+        _this.errors = false;
+        _this.success = true;
+      })["catch"](function (error) {
+        self.error = true;
+        _this.success = false;
+        self.errors = error.response.data.errors;
       });
     }
   }
@@ -19464,181 +19483,215 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "htc__appoinment__form" }, [
-    _c(
-      "form",
-      {
-        on: {
-          submit: function($event) {
-            $event.preventDefault()
-            return _vm.onSubmit($event)
-          }
-        }
-      },
-      [
-        _c("div", { staticClass: "htc__app__box__inner" }, [
-          _c("div", { staticClass: "htc__app__box" }, [
-            _c("div", { staticClass: "input_inner" }, [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.data.name,
-                    expression: "data.name"
-                  }
-                ],
-                attrs: { type: "text", placeholder: "نام خود را وارد کنید" },
-                domProps: { value: _vm.data.name },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.data, "name", $event.target.value)
-                  }
-                }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "htc__app__box__inner" }, [
-          _c("div", { staticClass: "htc__app__box" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.data.email,
-                  expression: "data.email"
-                }
-              ],
-              attrs: {
-                type: "email",
-                placeholder: "شماره همراه خود را وارد کنید"
-              },
-              domProps: { value: _vm.data.email },
+  return _c(
+    "div",
+    { staticClass: "htc__appoinment__form" },
+    [
+      _vm._l(_vm.errors, function(error) {
+        return error
+          ? _c(
+              "div",
+              { staticClass: "alert alert-danger", attrs: { role: "alert" } },
+              [_vm._v("\n      " + _vm._s(error[0]) + "\n    ")]
+            )
+          : _vm._e()
+      }),
+      _vm._v(" "),
+      _vm.success
+        ? _c(
+            "div",
+            { staticClass: "alert alert-success", attrs: { role: "alert" } },
+            [_vm._v("\n      .در خواست شما با موفقیت ثبت شد\n    ")]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      !_vm.success
+        ? _c(
+            "form",
+            {
               on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.data, "email", $event.target.value)
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.onSubmit($event)
                 }
               }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "htc__app__box__inner" }, [
-          _c("div", { staticClass: "htc__app__box" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.data.tel,
-                  expression: "data.tel"
-                }
-              ],
-              attrs: { type: "text", placeholder: "مشاوره موضوع" },
-              domProps: { value: _vm.data.tel },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.data, "tel", $event.target.value)
-                }
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "htc__app__box__inner" }, [
-          _c("div", { staticClass: "htc__app__box doctor_select" }, [
-            _c("div", { staticClass: "doctor_select_inner" }, [
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.data.department,
-                      expression: "data.department"
+            },
+            [
+              _c("div", { staticClass: "htc__app__box__inner" }, [
+                _c("div", { staticClass: "htc__app__box" }, [
+                  _c("div", { staticClass: "input_inner" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.data.name,
+                          expression: "data.name"
+                        }
+                      ],
+                      attrs: {
+                        type: "text",
+                        placeholder: "نام خود را وارد کنید"
+                      },
+                      domProps: { value: _vm.data.name },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.data, "name", $event.target.value)
+                        }
+                      }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "htc__app__box__inner" }, [
+                _c("div", { staticClass: "htc__app__box" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.data.phoneNumber,
+                        expression: "data.phoneNumber"
+                      }
+                    ],
+                    attrs: {
+                      type: "text",
+                      placeholder: "شماره همراه خود را وارد کنید"
+                    },
+                    domProps: { value: _vm.data.phoneNumber },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.data, "phoneNumber", $event.target.value)
+                      }
                     }
-                  ],
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.$set(
-                        _vm.data,
-                        "department",
-                        $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      )
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "htc__app__box__inner" }, [
+                _c("div", { staticClass: "htc__app__box" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.data.emailAddress,
+                        expression: "data.emailAddress"
+                      }
+                    ],
+                    attrs: { type: "email", placeholder: "پست الکترونیک" },
+                    domProps: { value: _vm.data.emailAddress },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.data, "emailAddress", $event.target.value)
+                      }
                     }
-                  }
-                },
-                [
-                  _c("option", { attrs: { value: "1", selected: "" } }, [
-                    _vm._v("کاشت مو")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "2" } }, [
-                    _vm._v("کاشت ریش و سبیل")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "3" } }, [
-                    _vm._v("کاشت ابرو")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "4" } }, [_vm._v("مزوتراپی")])
-                ]
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "appoinment_message" }, [
-          _c("div", { staticClass: "htc__app__box message" }, [
-            _c("textarea", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.data.message,
-                  expression: "data.message"
-                }
-              ],
-              attrs: { name: "Message", placeholder: "توضیحات" },
-              domProps: { value: _vm.data.message },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.data, "message", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _vm._m(0)
-        ])
-      ]
-    )
-  ])
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "htc__app__box__inner" }, [
+                _c("div", { staticClass: "htc__app__box doctor_select" }, [
+                  _c("div", { staticClass: "doctor_select_inner" }, [
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.data.department,
+                            expression: "data.department"
+                          }
+                        ],
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              _vm.data,
+                              "department",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
+                        }
+                      },
+                      [
+                        _c("option", { attrs: { value: "planting hair" } }, [
+                          _vm._v("کاشت مو")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "option",
+                          { attrs: { value: "Planting beard and mustache" } },
+                          [_vm._v("کاشت ریش و سبیل")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "option",
+                          { attrs: { value: "eyebrow transplant" } },
+                          [_vm._v("کاشت ابرو")]
+                        ),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "Mesotherapy" } }, [
+                          _vm._v("مزوتراپی")
+                        ])
+                      ]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "appoinment_message" }, [
+                _c("div", { staticClass: "htc__app__box message" }, [
+                  _c("textarea", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.data.description,
+                        expression: "data.description"
+                      }
+                    ],
+                    attrs: { name: "Message", placeholder: "توضیحات" },
+                    domProps: { value: _vm.data.description },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.data, "description", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _vm._m(0)
+              ])
+            ]
+          )
+        : _vm._e()
+    ],
+    2
+  )
 }
 var staticRenderFns = [
   function() {
