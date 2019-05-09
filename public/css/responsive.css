@@ -2574,4 +2574,16 @@
 	.hamburger {
   		display: block;
 	}
+
+	.modal {
+        z-index: 99999;
+    }
+    .modal-dialog {
+            margin: 0;
+            height: 100%;
+    }
+    .modal-content {
+        width: 100%;
+        height: 100%;
+    }
 }

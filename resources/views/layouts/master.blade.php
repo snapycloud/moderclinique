@@ -124,30 +124,11 @@
             <!-- End Copyright Area -->
         </footer>
         <!-- End Footer Area -->
-        <div class="menu">
-  <nav class="menu__nav">
-    <div class="container row" style="top: 10px;position: absolute;left: 15px;">
-  <div class="col-12">
-    <div class="list-group" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">در خواست نوبت</a>
-      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">درخواست مشاوره</a>
-      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">پیشنهادات و انتقادات</a>
-      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">آدرس مطب روی نقشه</a>
-      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">واتسپ</a>
-      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">تلکرام</a>
-    </div>
-  </div>
-</div>
-  </nav>
-  <div class="hamburger">
-    <button class="r-button hamburger__button menu__toggle">
-      <span class="hamburger__label">Open menu</span>
-    </button>
-  </div>  
-</div>
         
-    </div>
+@include('components.menu__nav')
 
+<consultation-modal></consultation-modal>
+</div>
 
 
     <!-- Body main wrapper end -->
