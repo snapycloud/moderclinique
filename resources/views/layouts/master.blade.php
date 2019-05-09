@@ -10,6 +10,7 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="http://demo.devitems.com/curex-v2/curex/apple-touch-icon.png">
+    <meta name="csrf-token" value="{{ csrf_token() }}">
     
     <!-- All css files are included here. -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -29,7 +30,7 @@
     <![endif]-->  
 
     <!-- Body main wrapper start -->
-    <div class="wrapper">
+    <div class="wrapper" id="app">
         @include('components.header')
         @yield('main')
 
@@ -139,6 +140,7 @@
     <script src="{{ asset('js/map.js') }}"></script>
     <script src="{{ asset('js/animatedModal.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
 </body>
 
