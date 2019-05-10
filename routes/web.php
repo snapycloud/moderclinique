@@ -9,9 +9,21 @@ Route::get('gallery/{slug}', 'PageController@getAbout')->name('gallery.slug');
 
 
 Route::get('image/{id}', function($id){
+    $cache_key = 'slider-' . $id;
+    $image = cache()->get($cache_key);
 	$cat = App\Attachment::find($id);
-	header('Pragma: public');
+    if(!$image) {
+	    header('Pragma: public');
+	    header('Cache-Control: max-age=360000, must-revalidate');
+	    header('Content-Type: ' . $cat->type);
+
+        echo $image;
+    }
+	$image = file_get_contents('/home/production/onpermise/5ccc0902cd2ca7d50/data/upload/' . $cat->id );
+    cache()->put($cache_key, $image);
+    header('Pragma: public');
 	header('Cache-Control: max-age=360000, must-revalidate');
 	header('Content-Type: ' . $cat->type);
-	readfile('/home/production/onpermise/5ccc0902cd2ca7d50/data/upload/' . $cat->id );
+
+    echo $image;
 })->name('image');
