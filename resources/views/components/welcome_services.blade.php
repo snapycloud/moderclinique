@@ -13,7 +13,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="singel_project mb--30">
                             <div class="project_img">
-                                <a href="#">
+                                <a href="{{ route('service.slug', [ $item['slug'] ])   }}">
                                     <img src="{{ route('image', [ $item['coverId'] ]) }}" alt="Cardiology Icon">
                                 </a>
                             </div>
