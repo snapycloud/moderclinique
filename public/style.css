@@ -4695,11 +4695,15 @@ a.ui-state-default {
     color: #001430;
     font-size: 40px;
     margin-bottom: 35px;
+    direction: rtl;
+    text-align: right;
 }
 .additional_support_desc > p {
     color: #001430;
     line-height: 27px;
     margin-bottom: 15px;
+    direction: rtl;
+    text-align: right;
 }
 .additional_suupor_list li {
     -webkit-box-align: center;
@@ -4726,6 +4730,8 @@ a.ui-state-default {
 }
 .serices_details_content {
 	padding: 45px 40px;
+      direction: rtl;
+    text-align: right;
 }
 .serices_details_content > p {
     color: #001430;

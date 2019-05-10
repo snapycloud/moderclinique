@@ -27,4 +27,13 @@ class PageController extends Controller
     {
     	return view('about');
     }
+
+    public function getServiceBySlug($slug)
+    {
+         $service = $this->api()->request('get', 'KnowledgeBaseArticle/5ccc261f59cae274d');
+
+        return view('service_slug', [
+            'service' => $service
+        ]);
+    }
 }

@@ -1,4 +1,4 @@
-{{--         <div class="slider__container">
+        <div class="slider__container">
             <div class="slider-active owl-carousel">
                 @foreach($slider as $item)
                 <div class="slider-wrapper bg-opacity" style="background-image:url( {{ route('image', $item['coverId']) }} )">
@@ -15,4 +15,4 @@
                 </div>
                 @endforeach
             </div>
-        </div> --}}
+        </div>
