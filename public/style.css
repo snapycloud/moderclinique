@@ -5669,8 +5669,8 @@ blockquote {
 /* hamburger */
 
 .hamburger{
-  width: 1em;
-  height: .5em;
+  /*width: 1em;*/
+  /*height: .5em;*/
   font-size: var(--uiMenuCircleSize);
   flex: none;
   
@@ -5701,10 +5701,10 @@ blockquote {
 .hamburger__button{
   width: 1.4em;
   height: 1em;
-  
   position: relative;
   text-indent: -9999px;
   z-index: 2;
+  bottom: 6px;
 }
 
 .hamburger__button:before, .hamburger__button:after, .hamburger__label{
@@ -5860,11 +5860,18 @@ The component will reset button browser styles
     list-style: var(--uirListListStyle) !important;
 }
 
-.hamburger {
+/*.hamburger {
   display: none;
-}
+}*/
 .list-group-item {
-  padding: 40px;
-  font-size: 30px;
+  padding: 20px;
+  font-size: 20px;
   text-align: center;
+}
+
+
+
+
+.list-group-item {
+  background-color: #001430 !important;
 }
