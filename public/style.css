@@ -4692,7 +4692,9 @@ a.ui-state-default {
 }
 
 .additional_support_content > h2 {
-    color: #001430;
+    color: #001430;git config core.fileMode false
+git config core.fileMode false
+
     font-size: 40px;
     margin-bottom: 35px;
     direction: rtl;
