@@ -8,7 +8,15 @@ class PageController extends Controller
 {
     public function getWelcome()
     {
-    	return view('welcome');
+        $slider = $this->api()->request('get', 'KnowledgeBaseArticle', [
+            'where[0][attribute]' => 'categories',
+            'where[0][type]'    =>  'linkedWith',
+            'where[0][value][]' => '5ccc25026b4a0ad50'
+        ]);
+        
+    	return view('welcome', [
+            'slider' => $slider['list']
+        ]);
     }
 
     public function getContact()
