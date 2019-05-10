@@ -128,6 +128,7 @@
 @include('components.menu__nav')
 
 <consultation-modal></consultation-modal>
+<case-modal></case-modal>
 </div>
 
 

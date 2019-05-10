@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 class Client extends Controller
 {
-
     public function postConsultation(Request $req)
     {
     	$req->validate([
@@ -23,6 +22,16 @@ class Client extends Controller
     	}
     	
     	return $this->api()->request('POST', 'lead', $req->all());
+    }
+
+    public function postCase(Request $req)
+    {
+    	$req->validate([
+    		'name' => 'required|max:255',
+    		'emailAddress' => 'required|email',
+    	]);
+    	
+    	return $this->api()->request('POST', 'case', $req->all());
     }
 
     public function traverseFarsi($str)
