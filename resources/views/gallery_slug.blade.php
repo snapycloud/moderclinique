@@ -18,8 +18,9 @@
 
         <div class="our_blog_area ptb--100">
             <div class="container">
-                @foreach($images['attachmentsIds'] as $item)
+               
                     <div class="row blog-masonry">
+                         @foreach($images['attachmentsIds'] as $item)
                         <div class="grid-item col-lg-4 col-md-6 col-12">
                             <div class="single_latest_post mb--30">
                                 <div class="ht__blog__thumb">
@@ -29,8 +30,9 @@
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                     </div>
-                @endforeach
+                
             </div>
         </div>
 
