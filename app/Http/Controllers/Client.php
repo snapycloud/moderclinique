@@ -24,6 +24,24 @@ class Client extends Controller
     	return $this->api()->request('POST', 'lead', $req->all());
     }
 
+    public function postCotnact(Request $req)
+    {
+    	$req->validate([
+    		'name' => 'required|max:255',
+    		'phoneNumber' => 'required|regex:/(۰۹)[۰-۹]{8}/|regex:/(09)[0-9]{8}/',
+    		'emailAddress' => ''
+    	]);
+    	// get first and last name form name column
+    	$data = $req->all();
+    	$name = explode(" ", $data['name']);
+    	if(count($name) == 2) {
+    		$data['firstName'] = $name[0];
+    		$data['lastName'] = $name[1];
+    	}
+    	
+    	return $this->api()->request('POST', 'contact', $req->all());
+    }
+
     public function postCase(Request $req)
     {
     	$req->validate([

@@ -3,7 +3,7 @@
     <div class="container row" style="top: 10px;position: absolute;left: 15px;">
   <div class="col-12">
     <div class="list-group" id="list-tab" role="tablist">
-      <a class="list-group-item" data-toggle="modal" data-target="#queue" id="list-home-list" href="#list-home">در خواست نوبت</a>
+      <a class="list-group-item" data-toggle="modal" data-target="#contact" id="list-home-list" href="#list-home">در خواست نوبت</a>
       <a class="list-group-item" data-toggle="modal" data-target="#oppoinment" id="list-profile-list" href="#list-profile">درخواست مشاوره</a>
       <a class="list-group-item" data-toggle="modal" data-target="#case"   href="#list-messages">پیشنهادات و انتقادات</a>
       <a class="list-group-item"  target="_blank" href="https://www.google.com/maps/?q=35.763770, 51.288649">آدرس مطب روی نقشه</a>

@@ -129,6 +129,7 @@
 
 <consultation-modal></consultation-modal>
 <case-modal></case-modal>
+<contact-modal></contact-modal>
 </div>
 
 
