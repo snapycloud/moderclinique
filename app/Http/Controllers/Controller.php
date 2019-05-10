@@ -21,7 +21,6 @@ class Controller extends BaseController
         $this->client->setSecretKey('e5574e988c2d2f2a0582dd65cf146506');
 
         $menu_services = $this->api()->request('get', 'KnowledgeBaseArticle', [
-            'select' => 'name,slug',
             'where[0][attribute]' => 'categories',
             'where[0][type]'    =>  'linkedWith',
             'where[0][value][]' => '5ccc24e2d2fef7fcf'

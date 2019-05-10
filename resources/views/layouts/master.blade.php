@@ -33,105 +33,13 @@
     <!-- Body main wrapper start -->
     <div class="wrapper" id="app">
         @include('components.header')
-        @yield('main')
-
-        
-        <footer class="footer_area">
-            <div class="footer_top">
-                <div class="container">
-                    <div class="row">
-                       
-                        <div class="col-lg-2 col-md-2">
-                            <div class="single_footer widget footer_1">
-                                <div class="single_footer_title text-right" >
-                                    <h2>پیوندها</h2>
-                                </div>
-                                <div class="single_footer_menu text-right">
-                                    <ul>
-                                        <li><a href="#">صفحه اصلی</a></li>
-                                        <li><a href="#">درباره ما</a></li>
-                                        <li><a href="#">نوبتگیری</a></li>
-                                        <li><a href="#">خدمات ما</a></li>
-                                        <li><a href="#">سوالات متداول</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-3">
-                            <div class="single_footer widget footer_2">
-                                <div class="single_footer_title text-right">
-                                    <h2>دراه کارها</h2>
-                                </div>
-                                <div class="single_footer_menu text-right">
-                                    <ul>
-                                        <li><a href="#">کاشت مو</a></li>
-                                        <li><a href="#">کاشت ریش و سبیل</a></li>
-                                        <li><a href="#">کاشت ابرو</a></li>
-                                        <li><a href="#">مزوتوراپی</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="col-lg-3 col-md-2">
-                            <div class="single_footer widget footer_3 ">
-                                <div class="single_footer_title text-right">
-                                    <h2>پشتیبانی</h2>
-                                </div>
-                                <div class="single_footer_menu text-right">
-                                    <ul>
-                                        <li><a href="#">با ما در تماس باشید</a></li>
-                                        <li><a href="#">راهنمای مراقبت</a></li>
-                                        <li><a href="#">پشیتبانی</a></li>
-                                        <li><a href="#">درباره ما</a></li>
-                                        <li><a href="#">سایت مپ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="col-lg-4 col-md-4">
-                            <div class="single_footer widget footer_4">
-                                <div class="single_footer_title text-right">
-                                    <h2>تماس با ما</h2>
-                                </div>
-                                <div class="single_footer_desc text-right">
-                                    <p>آدرس: تهران - سعادت آباد بلواردریا بین خیابان گلها و خیابان رامشه پلاک ۷۰ طبقه ۳</p>
-                                    <p>خطوط ویژه <br> ۰۲۱-۸۷۷۰۰۰۰۰<br>۰۲۱-۸۸۰۸۰۹۱۵ </p>
-                                    <p>پاسخگوی ۲۴ ساعته ۰۲۱-۸۸۵۷۲۵۴۱<br>۰۲۱-۸۸۵۷۲۵۴۱ </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="copyright__content">
-                                <div class="copyright__inner">
-                                    <p>قدرت گرفته از سریوس <a href="https://snapycloud.com" target="_blank"> پردازش اسنپی</a> تنها سرویس ابری مدیریت کسب و کار</p>
-                                </div>
-                                <div class="social__icon">
-                                    <a href="https://www.instagram.com/modernclinique/?hl=en" target="_blank"><i class="zmdi zmdi-instagram"></i></a>
-                                    <a href="http://api.whatsapp.com/send?phone09128981521=&text=با سلام، اینجانب در خواست مشاوره دارم"><i class="zmdi zmdi-whatsapp"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Copyright Area -->
-        </footer>
-        <!-- End Footer Area -->
-        
-@include('components.menu__nav')
-
-<consultation-modal></consultation-modal>
-<case-modal></case-modal>
-<contact-modal></contact-modal>
-</div>
+        @yield('main')        
+        @include('components.footer')
+        @include('components.menu__nav')
+        <consultation-modal></consultation-modal>
+        <case-modal></case-modal>
+        <contact-modal></contact-modal>
+    </div>
 
 
     <!-- Body main wrapper end -->

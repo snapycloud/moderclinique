@@ -9,48 +9,23 @@
                 </div>
                 <div class="row">
                    
-
+                    @foreach($menu_services as $item)
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="singel_project mb--30">
                             <div class="project_img">
                                 <a href="#">
-                                    <img src="images/portfolio/project/1.png" alt="Cardiology Icon">
+                                    <img src="{{ route('image', [ $item['coverId'] ]) }}" alt="Cardiology Icon">
                                 </a>
                             </div>
                             <div class="project_content">
-                                <h3 class="text-center"><a href="#">کاشت ریش</a></h3>
-                                <p>کاشت مو در قسمت هایی از ریش و سبیل در برخی از نواحی که مو در آنجا تا بحال رشد نکرده است و یا رشد آن ها ضعیف و نازک است</p>
+                                <h3 class="text-center">
+                                    <a href="{{ route('service.slug', [ $item['slug'] ])   }}">{{ $item['name'] }}</a>
+                                </h3>
+                                <p>{{ $item['description'] }}</p>
                             </div>
                         </div>
-                    </div>                   
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="singel_project mb--30">
-                            <div class="project_img">
-                                <a href="#">
-                                    <img src="images/portfolio/project/1.png" alt="Cardiology Icon">
-                                </a>
-                            </div>
-                            <div class="project_content">
-                                <h3 class="text-center"><a href="#">کاشت ریش</a></h3>
-                                <p>کاشت مو در قسمت هایی از ریش و سبیل در برخی از نواحی که مو در آنجا تا بحال رشد نکرده است و یا رشد آن ها ضعیف و نازک است</p>
-                            </div>
-                        </div>
-                    </div>                 
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="singel_project mb--30">
-                            <div class="project_img">
-                                <a href="#">
-                                    <img src="images/portfolio/project/1.png" alt="Cardiology Icon">
-                                </a>
-                            </div>
-                            <div class="project_content">
-                                <h3 class="text-center"><a href="#">کاشت ریش</a></h3>
-                                <p>کاشت مو در قسمت هایی از ریش و سبیل در برخی از نواحی که مو در آنجا تا بحال رشد نکرده است و یا رشد آن ها ضعیف و نازک است</p>
-                            </div>
-                        </div>
-                    </div>  
-
-                   
+                    </div>
+                     @endforeach                    
                     
                 </div>
             </div>
