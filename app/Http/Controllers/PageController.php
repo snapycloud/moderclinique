@@ -30,10 +30,31 @@ class PageController extends Controller
 
     public function getServiceBySlug($slug)
     {
-         $service = $this->api()->request('get', 'KnowledgeBaseArticle/5ccc261f59cae274d');
+         $response = $this->api()->request('get', 'KnowledgeBaseArticle', [
+            'where[0][type]' => 'startsWith',
+            'where[0][attribute]' => 'slug',
+            'where[0][value]' => $slug,
+        ]);
+        $service = $this->api()->request('get', 'KnowledgeBaseArticle/' . $response['list'][0]['id']);
+
+        
 
         return view('service_slug', [
             'service' => $service
+        ]);
+    }
+
+    public function getGalleryBySlug($slug)
+    {
+        $response = $this->api()->request('get', 'KnowledgeBaseArticle', [
+            'where[0][type]' => 'startsWith',
+            'where[0][attribute]' => 'slug',
+            'where[0][value]' => $slug,
+        ]);
+        $gallery = $this->api()->request('get', 'KnowledgeBaseArticle/' . $response['list'][0]['id']);
+
+        return view('gallery_slug', [
+            'images' => $gallery
         ]);
     }
 }

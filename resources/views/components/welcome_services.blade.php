@@ -14,7 +14,7 @@
                         <div class="singel_project mb--30">
                             <div class="project_img">
                                 <a href="{{ route('service.slug', [ $item['slug'] ])   }}">
-                                    <img src="{{ route('image', [ $item['coverId'] ]) }}" alt="Cardiology Icon">
+                                    <img src="{{ route('image', [ $item['coverId'] ]) }}" alt="">
                                 </a>
                             </div>
                             <div class="project_content">

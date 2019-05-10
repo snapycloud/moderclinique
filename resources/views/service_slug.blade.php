@@ -22,10 +22,10 @@
                     <div class="row">
                         <div class="col-lg-7 offset-lg-1 col-md-12 col-12">
                             <div class="sepcial_banner_content">
-                                <h4>Special Offer !!</h4>
-                                <h2>Get 40% off on Every Dental <br> Checkups.</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                <a href="#">Learn More</a>
+                                <h4>بهترین و جدیدترین تکنیک کاشت مو در ایران چیست؟</h4>
+                                <p>بهترین و جدیدترین تکنیک کاشت مو در ایران SUT نام دارد. همانطور که در مطالب بالا ذکر شد در این تکنیک میتوان از نهایت تراکم بانک موی فرد بهره برد و طی یک روز و در یک جلسه انجام می شود. بارزترین تفاوت کاشت مو با تکنیک SUT با روش های رایج و سنتی این است که در پروسه برداشت گرفت ها توسط دستگاه کاشت مو sut انجام می شود و مزیت این روش در آن است که تماما استریل و توسط تیم درمانی و مجرب انجام میشود و هنگام برداشت گرفت ها آسیبی به گرفت های مورد نظر و همچنین گرفت های همسایه وارد نمی شود و نتیجه آن این است که از تمامی ظرفیت بانک موی فرد متقاضی میتوان استفاده کرد.
+
+</p>
                             </div>
                         </div>
                     </div>

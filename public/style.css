@@ -3999,6 +3999,7 @@ footer.footer_area {
   font-size: 20px;
   direction: rtl;
   font-weight: 500;
+  text-align: right;
 }
 
 .sepcial_banner_content > h2 {
@@ -4015,6 +4016,7 @@ footer.footer_area {
   line-height: 27px;
   margin-top: 25px;
   padding-right: 15%;
+  text-align: right;
 }
 
 /*Working area css here*/
@@ -4724,7 +4726,7 @@ git config core.fileMode false
 .additional_suupor_list li i {
     color: #0381ff;
     font-size: 26px;
-    margin-right: 22px;
+    margin-left: 22px;
 }
 
 .services_details_content_inner {
