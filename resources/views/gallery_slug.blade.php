@@ -24,7 +24,7 @@
                         <div class="grid-item col-lg-4 col-md-6 col-12">
                             <div class="single_latest_post mb--30">
                                 <div class="ht__blog__thumb">
-                                    <a href="blog-details.html">
+                                    <a href="#">
                                         <img src="{{ route('image', [ $item ]) }}">
                                     </a>
                                 </div>
