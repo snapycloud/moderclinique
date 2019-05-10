@@ -13,7 +13,6 @@ class PageController extends Controller
             'where[0][type]'    =>  'linkedWith',
             'where[0][value][]' => '5ccc25026b4a0ad50'
         ]);
-        
     	return view('welcome', [
             'slider' => $slider['list']
         ]);

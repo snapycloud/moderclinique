@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Curex - Medical Clinic Service Bootstrap 4 Template</title>
-    <meta name="description" content="">
+    <title>کلینیک تخصصی پوست و مو و زیبایی - مدرن | modern clinique</title>
+    <meta property="og:title" content="کلینیک تخصصی پوست و مو و زیبایی - مدرن | modern clinique" />
+    <meta name="description" content="کلینیک تخصصی پوست و مو و زیبایی - مدرن | modern clinique">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="http://demo.devitems.com/curex-v2/curex/apple-touch-icon.png">
+    {{-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> --}}
+    {{-- <link rel="apple-touch-icon" href=""> --}}
     <meta name="csrf-token" value="{{ csrf_token() }}">
     
     <!-- All css files are included here. -->

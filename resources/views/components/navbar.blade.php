@@ -12,10 +12,22 @@
                             <nav class="main__menu__nav ">
                                 <ul class="main__menu">
                                     <li class="drop"><a href="{{ route('welcome') }}">صفحه اصلی</a></li>
-                                    <li class="drop"><a href="{{ route('about') }}">خدمات</a>
+                                    <li class="drop"><a href="#">خدمات</a>
                                         <ul class="dropdown">
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="single-services.html">Single Service </a></li>
+                                            @foreach($menu_services as $item)
+                                                <li>
+                                                    <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </li>
+                                    <li class="drop"><a href="#">گالری تصاویر</a>
+                                        <ul class="dropdown">
+                                            @foreach($menu_gallery as $item)
+                                                <li>
+                                                    <a href="{{ route('gallery.slug', [$item['slug']]) }}">{{ $item['name'] }}</a>
+                                                </li>
+                                            @endforeach
                                         </ul>
                                     </li>
                                     <li class="drop"><a href="{{ route('about') }}">مقالات</a></li>

@@ -389,6 +389,7 @@ color: #ea4335;
 .main__menu ul.dropdown li {
     border-bottom: 1px solid #f4f4f4;
     display: block;
+    width: 300px;
 }
 .main__menu ul.dropdown li a {
   background: #ffffff none repeat scroll 0 0;
