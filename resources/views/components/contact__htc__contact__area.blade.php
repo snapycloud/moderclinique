@@ -43,33 +43,12 @@
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
                             <div class="htc__contact__form__wrap">
+
                             <div class="contact-form-wrap">
                                 <h2 class="ct__title text--theme">فرم انتقادات و شکایات</h2>
-                                <form id="contact-form" action="mail.php" method="post">
-                                    <div class="single-contact-form name">
-                                        <div class="contact-box name_email">
-                                            <div class="contact-box">
-                                                <input type="text" placeholder="نام خود را وارد کنید *" name="name">
-                                            </div>
-                                            <div class="contact-box">
-                                                <input type="text" placeholder="شماره خود را وارد کنید *" name="phone">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="single-contact-form">
-                                        <div class="contact-box subject">
-                                            <input type="email" placeholder="ایمیل خود را وارد کنید *" name="email">
-                                        </div>
-                                    </div>
-                                    <div class="single-contact-form">
-                                        <div class="contact-box message">
-                                            <textarea name="message" placeholder="پیام خود را وارد کنید*"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="contact-btn">
-                                        <button type="submit">برای ثبت کلیک کنید</button>
-                                    </div>
-                                </form>
+                                <case-component></case-component>
+                                
+                                
                             </div>
                             <div class="form-output">
                                 <p class="form-messege"></p>
