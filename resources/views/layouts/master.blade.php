@@ -114,7 +114,7 @@
                                 </div>
                                 <div class="social__icon">
                                     <a href="https://www.instagram.com/modernclinique/?hl=en" target="_blank"><i class="zmdi zmdi-instagram"></i></a>
-                                    <a href="https://api.whatsapp.com/send?text=درخواست مشاور&phone=09032324184"><i class="zmdi zmdi-whatsapp"></i></a>
+                                    <a href="http://api.whatsapp.com/send?phone09128981521=&text=با سلام، اینجانب در خواست مشاوره دارم"><i class="zmdi zmdi-whatsapp"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -142,8 +142,8 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"></script>
-    <script src="{{ asset('js/map.js') }}"></script>
+    {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"></script> --}}
+    {{-- <script src="{{ asset('js/map.js') }}"></script> --}}
     <script src="{{ asset('js/main.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 <script>
@@ -174,6 +174,12 @@
   
   jsMenuNode.querySelector('.menu__toggle').addEventListener('click', callMenuToggle);
 })();
+
+    $('.mobile-menu nav').meanmenu({
+        meanScreenWidth: "9901",
+        meanMenuContainer: ".mobile-menu",
+        onePage: true,
+    });
 </script>
 </body>
 

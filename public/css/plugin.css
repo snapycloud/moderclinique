@@ -6057,6 +6057,10 @@ a.meanmenu-reveal{display:none}
   text-transform: uppercase;
   width: 90%;
   font-weight: bold;
+  direction: rtl;
+  text-align: right;
+  right: 10px;
+  margin-right: 20px
 }
 .mobile-menu-area {
 

@@ -30,41 +30,17 @@
                             <div class="mobile-menu d-lg-none">
                                 <nav>
                                     <ul>
-                                        <li class="drop"><a href="index.html">Home</a>
+                                    <li class="drop"><a href="{{ route('welcome') }}">صفحه اصلی</a></li>
+                                    <li class="drop"><a href="index.html">خدمات</a>
                                         <ul>
-                                            <li><a href="index.html">Home version 01</a></li>
-                                            <li><a href="index-2.html">Home version 02</a></li>
-                                            <li><a href="index-box.html">Home Box Layout</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="drop"><a href="about-us.html">About</a></li>
-                                    <li class="drop"><a href="service.html">Services</a>
-                                        <ul >
                                             <li><a href="service.html">Service</a></li>
                                             <li><a href="single-services.html">Single Service </a></li>
                                         </ul>
                                     </li>
-                                    <li class="drop"><a href="blog.html">Blog</a>
-                                        <ul >
-                                            <li><a href="blog.html">Blog Page</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                            <li><a href="blog-details-no-sidebar.html">Blog Details no sidebar</a></li>
-                                         </ul>
-                                    </li>
-                                    <li class="drop"><a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="about-us.html">about us</a></li>
-                                            <li><a href="contact-us.html">Contact us</a></li>
-                                            <li><a href="service.html">Services Pages</a></li>
-                                            <li><a href="single-services.html">Single Services</a></li>
-                                            <li><a href="doctor-details.html">Doctor Details</a></li>
-                                            <li><a href="blog.html">Blog Page</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                            <li><a href="blog-details-no-sidebar.html">Blog Details no sidebar</a></li>
-                                            <li><a href="404.html">404</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="drop"><a href="contact-us.html">Contact</a></li>
+                                    <li class="drop"><a href="{{ route('about') }}">مقالات</a></li>
+                                    <li class="drop"><a href="{{ route('about') }}">سوالات متداول</a></li>
+                                    <li class="drop"><a href="{{ route('about') }}">درباره ما</a></li>
+                                    <li class="drop"><a href="{{ route('contact') }}">تماس با ما</a></li>
                                     </ul>
                                 </nav>
                             </div>

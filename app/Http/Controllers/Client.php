@@ -21,14 +21,14 @@ class Client extends Controller
     		$data['lastName'] = $name[1];
     	}
     	
-    	return $this->api()->request('POST', 'lead', $req->all());
+    	return $this->api()->request('POST', 'lead', $data);
     }
 
     public function postCotnact(Request $req)
     {
     	$req->validate([
     		'name' => 'required|max:255',
-    		'phoneNumber' => 'required|regex:/(۰۹)[۰-۹]{8}/|regex:/(09)[0-9]{8}/',
+    		'phoneNumber' => 'required|regex:/(09)[0-9]{8}/',
     		'emailAddress' => ''
     	]);
     	// get first and last name form name column
@@ -38,8 +38,9 @@ class Client extends Controller
     		$data['firstName'] = $name[0];
     		$data['lastName'] = $name[1];
     	}
+
     	
-    	return $this->api()->request('POST', 'contact', $req->all());
+    	return $this->api()->request('POST', 'Contact', $data);
     }
 
     public function postCase(Request $req)
