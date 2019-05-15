@@ -7,6 +7,9 @@ Route::get('faq', 'PageController@getAbout')->name('faq');
 Route::get('service/{slug}', 'PageController@getServiceBySlug')->name('service.slug');
 Route::get('gallery/{slug}', 'PageController@getGalleryBySlug')->name('gallery.slug');
 
+Route::get('knowledgeBaseArticle', 'PageController@getKnowledgeBaseArticle')->name('knowledgeBaseArticle');
+Route::get('KnowledgeBaseArticle/{slug}', 'PageController@getKnowledgeBaseArticleBySlug')->name('knowledgeBaseArticle.slug');
+
 
 
 Route::get('image/{id}', function($id){

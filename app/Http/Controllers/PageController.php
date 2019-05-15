@@ -57,4 +57,15 @@ class PageController extends Controller
             'images' => $gallery
         ]);
     }
+
+    public function getKnowledgeBaseArticleBySlug($slug)
+    {
+        
+    }
+
+    public function getKnowledgeBaseArticle()
+    {
+        
+    }
 }
+

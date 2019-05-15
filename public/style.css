@@ -4895,6 +4895,7 @@ git config core.fileMode false
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 30px;
+    direction: rtl;    
 }
 blockquote {
   background: #e7f9fc none repeat scroll 0 0;
@@ -4907,6 +4908,8 @@ blockquote {
   padding: 50px 130px;
   text-align: center;
   position: relative;
+  direction: rtl;
+  font-family: "Iran Yekan Light"
 }
 .no-sidebar blockquote{
     padding: padding: 50px 170px;
@@ -5874,4 +5877,22 @@ The component will reset button browser styles
 
 .list-group-item {
   background-color: #001430 !important;
+}
+
+
+
+.navbar-container {
+  max-width: 1366px !important;
+}
+
+.post_excerpt blockquote::before {
+    color: rgb(0, 20, 48);
+    content: "";
+    font-family: material-design-iconic-font;
+    font-size: 188px;
+    left: 0px;
+    line-height: 0.45;
+    opacity: 0.1;
+    position: absolute;
+    top: 0px;
 }

@@ -64,4 +64,9 @@ class Client extends Controller
 
         return str_replace($farsi_chars, $latin_chars, $str);
     }
+
+    public function postSms(Request $req)
+    {
+        
+    }
 }
