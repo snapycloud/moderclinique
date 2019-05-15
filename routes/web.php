@@ -2,7 +2,7 @@
 
 Route::get('/', 'PageController@getWelcome')->name('welcome');
 Route::get('contact', 'PageController@getContact')->name('contact');
-Route::get('terms', 'PageController@getTerm')->name('terms');
+Route::get('terms', 'PageController@getTerms')->name('terms');
 Route::get('about', 'PageController@getAbout')->name('about');
 Route::get('faq', 'PageController@getAbout')->name('faq');
 Route::get('service/{slug}', 'PageController@getServiceBySlug')->name('service.slug');

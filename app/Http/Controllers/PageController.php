@@ -18,6 +18,11 @@ class PageController extends Controller
         ]);
     }
 
+    public function getTerms()
+    {
+        return view('terms');
+    }
+
     public function getContact()
     {
     	return view('contact');

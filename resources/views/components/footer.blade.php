@@ -10,10 +10,9 @@
                                 </div>
                                 <div class="single_footer_menu text-right">
                                     <ul>
-                                        <li><a href="{{ route('terms') }}">قوانین و مقررات</a></li>
+                                        <li><a href="{{ route('welcome') }}">قوانین و مقررات</a></li>
                                         <li><a href="{{ route('about') }}">درباره ما</a></li>
                                         <li><a href="{{ route('contact') }}">تماس با ما</a></li>
-                                        <li><a href="{{ route('faq') }}">سوالات متداول</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -44,10 +43,10 @@
                                 </div>
                                 <div class="single_footer_menu text-right">
                                     <ul>
-                                        <li><a href="#">با ما در تماس باشید</a></li>
+                                        <li><a href="{{ route('terms') }}">قوانین و مقررات</a></li>
                                         <li><a href="#">راهنمای مراقبت</a></li>
                                         <li><a href="#">پشیتبانی</a></li>
-                                        <li><a href="#">سایت مپ</a></li>
+                                        <li><a href="{{ route('faq') }}">سایت مپ</a></li>
                                     </ul>
                                 </div>
                             </div>
