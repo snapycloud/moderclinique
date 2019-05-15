@@ -2,6 +2,7 @@
 
 Route::get('/', 'PageController@getWelcome')->name('welcome');
 Route::get('contact', 'PageController@getContact')->name('contact');
+Route::get('terms', 'PageController@getTerm')->name('terms');
 Route::get('about', 'PageController@getAbout')->name('about');
 Route::get('faq', 'PageController@getAbout')->name('faq');
 Route::get('service/{slug}', 'PageController@getServiceBySlug')->name('service.slug');
@@ -26,7 +27,7 @@ Route::get('image/{id}', function($id){
 	$image = file_get_contents('/home/production/onpermise/5ccc0902cd2ca7d50/data/upload/' . $cat->id );
     cache()->put($cache_key, $image);
     header('Pragma: public');
-	header('Cache-Control: max-age=360000, must-revalidate');
+	header('Cache-Control: max-ag  e=360000, must-revalidate');
 	header('Content-Type: ' . $cat->type);
 
     echo $image;

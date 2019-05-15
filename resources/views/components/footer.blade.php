@@ -10,7 +10,7 @@
                                 </div>
                                 <div class="single_footer_menu text-right">
                                     <ul>
-                                        <li><a href="{{ route('welcome') }}">صفحه اصلی</a></li>
+                                        <li><a href="{{ route('terms') }}">قوانین و مقررات</a></li>
                                         <li><a href="{{ route('about') }}">درباره ما</a></li>
                                         <li><a href="{{ route('contact') }}">تماس با ما</a></li>
                                         <li><a href="{{ route('faq') }}">سوالات متداول</a></li>
