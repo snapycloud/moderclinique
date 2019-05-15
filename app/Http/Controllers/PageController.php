@@ -37,7 +37,12 @@ class PageController extends Controller
         ]);
         $service = $this->api()->request('get', 'KnowledgeBaseArticle/' . $response['list'][0]['id']);
 
-        
+        $service['body'] = str_replace(
+            "?entryPoint=attachment&amp;id=", 
+            "http://dev.modernclinique.com/image/", 
+            $service['body']
+        );
+
 
         return view('service_slug', [
             'service' => $service
