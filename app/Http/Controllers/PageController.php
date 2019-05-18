@@ -18,6 +18,37 @@ class PageController extends Controller
         ]);
     }
 
+    public function getFaq()
+    {
+        $cache_key = 'faq-list';
+        $data = cache()->get($cache_key);
+
+        if(!$data) {
+             $data = $this->api()->request('get', 'KnowledgeBaseCategory/action/listTree', [
+                'parentId' => '5cd5e79f22150f7c4',
+                'maxDepth'    =>  1,
+                'checkIfEmpty' => true,
+
+            ]);
+
+             foreach ($data['list'] as $key => $value) {
+                  $list = $this->api()->request('get', 'KnowledgeBaseArticle', [
+                        'where[0][attribute]' => 'categories',
+                        'where[0][type]'    =>  'linkedWith',
+                        'where[0][value][]' => $value['id']
+                    ]);
+                 $data['list'][$key]['faqs']  = $list;
+             }
+
+             cache()->put($cache_key, $data);
+        }
+
+
+        return view('faq', [
+            'data' => $data['list']
+        ]);
+    }
+
     public function getTerms()
     {
         return view('terms');

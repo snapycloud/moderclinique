@@ -4740,10 +4740,17 @@ git config core.fileMode false
 .serices_details_content > p {
     color: #001430;
     line-height: 27px;
+    font-family: "Iran Yekan Light"
 }
 .serices_details_content > h2 {
     color: #001430;
     font-size: 40px;
+    margin-bottom: 14px;
+}
+
+.serices_details_content > h4 {
+    color: #001430;
+    font-size: 20px;
     margin-bottom: 14px;
 }
 .services_details .how_it_work_section {

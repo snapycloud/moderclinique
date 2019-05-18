@@ -31,7 +31,7 @@
                                         </ul>
                                     </li>
                                     <li class="drop"><a href="{{ route('about') }}">مقالات</a></li>
-                                    <li class="drop"><a href="{{ route('about') }}">سوالات متداول</a></li>
+                                    <li class="drop"><a href="{{ route('faq') }}">سوالات متداول</a></li>
                                     <li class="drop"><a href="{{ route('about') }}">درباره ما</a></li>
                                     <li class="drop"><a href="{{ route('contact') }}">تماس با ما</a></li>
                                 </ul>
@@ -43,14 +43,14 @@
                                 <nav>
                                     <ul>
                                     <li class="drop"><a href="{{ route('welcome') }}">صفحه اصلی</a></li>
-                                    <li class="drop"><a href="index.html">خدمات</a>
+                                    <li class="drop"><a href="#">خدمات</a>
                                         <ul>
                                             <li><a href="service.html">Service</a></li>
                                             <li><a href="single-services.html">Single Service </a></li>
                                         </ul>
                                     </li>
                                     <li class="drop"><a href="{{ route('about') }}">مقالات</a></li>
-                                    <li class="drop"><a href="{{ route('about') }}">سوالات متداول</a></li>
+                                    <li class="drop"><a href="{{ route('faq') }}">سوالات متداول</a></li>
                                     <li class="drop"><a href="{{ route('about') }}">درباره ما</a></li>
                                     <li class="drop"><a href="{{ route('contact') }}">تماس با ما</a></li>
                                     </ul>
