@@ -30,7 +30,7 @@
                                             @endforeach
                                         </ul>
                                     </li>
-                                    <li class="drop"><a href="{{ route('about') }}">مقالات</a></li>
+                                    <li class="drop"><a href="{{ route('knowledgeBaseArticle') }}">مقالات</a></li>
                                     <li class="drop"><a href="{{ route('faq') }}">سوالات متداول</a></li>
                                     <li class="drop"><a href="{{ route('about') }}">درباره ما</a></li>
                                     <li class="drop"><a href="{{ route('contact') }}">تماس با ما</a></li>

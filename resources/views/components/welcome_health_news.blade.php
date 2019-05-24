@@ -7,19 +7,22 @@
                         </div>
                     </div>
                 </div>
+            
+            @foreach($data as $item)
+
                 <div class="row htc__blog__wrap clearfix mt--30">
                     <div class="col-lg-12 col-xl-12 col-md-12 col-12">
                          <div class="single_latest_post flex left_grid">
                             <div class="ht__blog__thumb">
                                 <a href="blog-details.html">
-                                    <img src="images/blog/latest_post/img-1.png" alt="blog images">
+                                    <img src="{{ route('image', $item['coverId']) }}" alt="{{ $item['name']}}">
                                 </a>
                             </div>
                             <div class="htc__blog__content">
                                 <div class="blog__post_title text-right">
-                                    <h2><a href="blog-details.html">متقاضی پیوند موی طبیعی چه شرایطی باید داشته باشد؟</a></h2>
-                                    <p>آیا شما کاندید مناسبی برای کاشت موی طبیعی در ناحیه سَر، ابرو و ریش و سبیل هستید؟</p>
-                                    <p>آیا شما کاندید مناسبی برای کاشت موی طبیعی در ناحیه سَر، ابرو و ریش و سبیل هستید؟</p>
+                                    <h2><a href="blog-details.html">{{ $item['name'] }}</a></h2>
+                                    <p>{{ $item['description'] }}</p>
+                                    <a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}" class="btn-more text-right">ادامه مطلب</a>
                                 </div>
                             </div>
 
@@ -28,25 +31,6 @@
                     </div>
                 </div>
 
-                <div class="row htc__blog__wrap clearfix mt--30">
-                    <div class="col-lg-12 col-xl-12 col-md-12 col-12">
-                         <div class="single_latest_post flex left_grid">
-                            <div class="ht__blog__thumb">
-                                <a href="blog-details.html">
-                                    <img src="images/blog/latest_post/img-1.png" alt="blog images">
-                                </a>
-                            </div>
-                            <div class="htc__blog__content">
-                                <div class="blog__post_title text-right">
-                                    <h2><a href="blog-details.html">متقاضی پیوند موی طبیعی چه شرایطی باید داشته باشد؟</a></h2>
-                                    <p>آیا شما کاندید مناسبی برای کاشت موی طبیعی در ناحیه سَر، ابرو و ریش و سبیل هستید؟</p>
-                                    <p>آیا شما کاندید مناسبی برای کاشت موی طبیعی در ناحیه سَر، ابرو و ریش و سبیل هستید؟</p>
-                                </div>
-                            </div>
-
-                            
-                        </div>
-                    </div>
-                </div>
+            @endforeach
             </div>
         </section>

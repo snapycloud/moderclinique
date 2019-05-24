@@ -4177,11 +4177,12 @@ footer.footer_area {
     color: #001430;
     font-size: 16px;
     line-height: 27px;
+    direction: rtl;
 }
 .blog__post_title {
   _border-bottom: 1px solid #cdecfe;
-  margin-bottom: 28px;
-  padding-bottom: 25px;
+  _margin-bottom: 28px;
+  _padding-bottom: 25px;
   padding-left: 40px;
   padding-right: 18px;
 }
@@ -5907,4 +5908,40 @@ The component will reset button browser styles
 
 .rtl {
   direction: rtl !important;
+}
+
+
+.single_latest_post {
+  border-radius: 10px;
+  border: 4px solid #2196F3;
+  box-shadow: 0 0 30px rgba(3, 129, 255, 0.15)
+}
+
+.btn-more{
+      background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#26aef9), to(#22f285)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #26aef9 0%, #22f285 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #26aef9 0%, #2196F3 100%) repeat scroll 0 0;
+    border-radius: 30px;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    _width: 100%;
+    z-index: -1;
+      border-radius: 30px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    height: 55px;
+    line-height: 53px;
+    margin-top: 33px;
+    padding: 0 40px;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 9;
 }
