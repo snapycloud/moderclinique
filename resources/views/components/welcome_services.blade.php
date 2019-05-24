@@ -7,10 +7,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row rtl">
                    
                     @foreach($menu_services as $item)
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-3 col-md-3 col-12">
                         <div class="singel_project mb--30">
                             <div class="project_img">
                                 <a href="{{ route('service.slug', [ $item['slug'] ])   }}">

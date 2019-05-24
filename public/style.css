@@ -5870,9 +5870,9 @@ The component will reset button browser styles
     list-style: var(--uirListListStyle) !important;
 }
 
-/*.hamburger {
+.hamburger {
   display: none;
-}*/
+}
 .list-group-item {
   padding: 20px;
   font-size: 20px;
@@ -5902,4 +5902,9 @@ The component will reset button browser styles
     opacity: 0.1;
     position: absolute;
     top: 0px;
+}
+
+
+.rtl {
+  direction: rtl !important;
 }
