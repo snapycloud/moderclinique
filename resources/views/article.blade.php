@@ -13,7 +13,7 @@
                         <div class="single_latest_post mb--30">
                             <div class="ht__blog__thumb">
                                 <a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">
-                                    <img src="{{ route('image', $item['coverId']) }}" alt="{{ $item['name']}}">
+                                    <img src="{{ route('image', [ $item['coverId'] ]) }}" alt="{{ $item['name']}}">
                                 </a>
                             </div>
 
