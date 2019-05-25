@@ -2487,7 +2487,10 @@
 		transform: translateY(-60px);
 	}
 	.newsletter__form .input__box input[type="email"] {
-		padding: 0 110px 0 20px;
+		_padding: 0 110px 0 20px;
+	}
+	.newsletter_section_title  {
+		width: 100% !important;
 	}
 }
 /* Medium mobile :577px. */

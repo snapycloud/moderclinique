@@ -21,7 +21,7 @@
                                 <h3 class="text-center">
                                     <a href="{{ route('service.slug', [ $item['slug'] ])   }}">{{ $item['name'] }}</a>
                                 </h3>
-                                <p>{{ $item['description'] }}</p>
+                                <p>{{ str_limit($item['description'], 100) }}</p>
                             </div>
                         </div>
                     </div>
