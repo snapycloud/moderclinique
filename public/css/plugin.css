@@ -6218,7 +6218,8 @@ a.meanmenu-reveal{display:none}
     pointer-events: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
+    width: 90%;
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
     -webkit-transform: scale(0.75) translateY(-21px);
@@ -6237,7 +6238,7 @@ a.meanmenu-reveal{display:none}
     outline: none;
     padding-left: 18px;
     padding-right: 29px;
-    text-align: left;
+    text-align: right;
     -webkit-transition: all 0.2s;
     transition: all 0.2s; }
     .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
