@@ -47,6 +47,7 @@
     <!-- Placed js at the end of the document so the pages load faster -->
 
     <!-- jquery latest version -->
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/vendor/jquery.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/popper.js') }}"></script>
@@ -54,7 +55,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"></script>
     <script src="{{ asset('js/map.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    
 <script>
     (function(){
   'use strict';
