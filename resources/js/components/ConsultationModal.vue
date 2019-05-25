@@ -5,8 +5,8 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <button type="button" class="close" style="margin-left: 0px;" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">درخواست مشاوره</h4>
       </div>
       <div class="modal-body">
 
