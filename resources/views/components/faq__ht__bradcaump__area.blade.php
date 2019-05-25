@@ -27,7 +27,7 @@
         <section class="htc__try__solve__area">
             <div class="container-fluid">
                  
-                <!-- <div class="home--try" style="background: rgba(0, 0, 0, 0) url('images/about/2.png') no-repeat scroll 0 0 / cover;"> -->
+                <div class="home--try" style="background: rgba(0, 0, 0, 0) url('images/about/2.png') no-repeat scroll 0 0 / cover;">
                 <div class="home--try">
                     <div class="htc__try__solveleft">
                         <div class="htc__try__details">
@@ -45,12 +45,11 @@
                                 <!-- Start Single Items -->
                                 @foreach($data as $item)
                                 <div class="ht__sin__solve">
-                                    <div class="ser_icon">
+                                    <!-- <div class="ser_icon">
                                         <img src="images/service/icon/ser-cion-6" alt="services Icon">
-                                    </div>
+                                    </div> -->
                                     <div class="ser__content">
                                         <h4><a href="#{{ $item['id']}}">{{ $item['name'] }}</a></h4>
-                                        {{-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p> --}}
                                     </div>
                                 </div>
                                 @endforeach

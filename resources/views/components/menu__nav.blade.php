@@ -10,7 +10,7 @@
       <a class="list-group-item"  target="_blank" href="tel:0218770000">تماس با ما</a>
       <a class="list-group-item"  target="_blank" href="tel:0218770000">مشاوره مستقیم</a>
       <a class="list-group-item"  target="_blank" href="http://api.whatsapp.com/send?phone09128981521=&text=با سلام، اینجانب در خواست مشاوره دارم">واتسپ</a>
-      <a class="list-group-item" id="list-settings-list"  target="_blank" href="https://telegram.me/ModernClinique">تلکرام</a>
+      <a class="list-group-item" id="list-settings-list"  target="_blank" href="https://telegram.me/ModernClinique">تلگرام</a>
     </div>
   </div>
 </div>
