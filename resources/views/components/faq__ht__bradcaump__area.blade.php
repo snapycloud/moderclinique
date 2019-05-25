@@ -45,17 +45,6 @@
                                 @foreach($data as $item)
                                 <div class="ht__sin__solve">
                                     <div class="ser_icon">
-                                        <img src="images/service/icon/ser-cion-6" alt="services Icon">
-                                    </div>
-                                    <div class="ser__content">
-                                        <h4><a href="#{{ $item['id']}}">{{ $item['name'] }}</a></h4>
-                                    </div>
-                                </div>
-                                @endforeach
-                                @foreach($data as $item)
-                                <div class="ht__sin__solve">
-                                    <div class="ser_icon">
-                                        <img src="images/service/icon/ser-cion-6" alt="services Icon">
                                     </div>
                                     <div class="ser__content">
                                         <h4><a href="#{{ $item['id']}}">{{ $item['name'] }}</a></h4>
