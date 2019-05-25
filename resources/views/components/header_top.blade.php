@@ -10,7 +10,7 @@
                         <div class="col-lg-6 col-md-4 col-12">
                             <div class="ht__header__top__right">
                                 <p class="social_icon">
-                                    شماوره آنلاین
+                                    مشاوره آنلاین
                                     <a href="http://api.whatsapp.com/send?phone09128981521=&text=با سلام، اینجانب در خواست مشاوره دارم" target="_blank"><i class="fa fa-whatsapp"></i></a>
                                     <a href="https://telegram.me/ModernClinique" target="_blank"><i class="fa fa-telegram"></i></a>
                                 </p>
