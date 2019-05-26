@@ -10,7 +10,7 @@ class Client extends Controller
     {
     	$req->validate([
     		'name' => 'required|max:255',
-    		'phoneNumber' => 'required|regex:/(۰۹)[۰-۹]{9}/|regex:/(09)[0-9]{9}/',
+    		'phoneNumber' => 'required|regex:/(09)[0-9]{9}/',
     	]);
     	// get first and last name form name column
     	$data = $req->all();
@@ -18,7 +18,10 @@ class Client extends Controller
     	if(count($name) == 2) {
     		$data['firstName'] = $name[0];
     		$data['lastName'] = $name[1];
-    	}
+    	}} else {
+            $data['firstName'] = "";
+            $data['lastName'] = $data['name'];
+        }
     	
     	return $this->api()->request('POST', 'lead', $data);
     }
@@ -27,7 +30,7 @@ class Client extends Controller
     {
     	$req->validate([
     		'name' => 'required|max:255',
-    		'phoneNumber' => 'required|regex:/(09)[0-9]{8}/',
+    		'phoneNumber' => 'required|regex:/(09)[0-9]{9}/',
     	]);
     	// get first and last name form name column
     	$data = $req->all();
@@ -35,7 +38,12 @@ class Client extends Controller
     	if(count($name) == 2) {
     		$data['firstName'] = $name[0];
     		$data['lastName'] = $name[1];
-    	}
+    	} else {
+            $data['firstName'] = "";
+            $data['lastName'] = $data['name'];
+        }
+
+
 
     	
     	return $this->api()->request('POST', 'Contact', $data);
