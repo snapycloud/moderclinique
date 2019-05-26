@@ -10,8 +10,7 @@ class Client extends Controller
     {
     	$req->validate([
     		'name' => 'required|max:255',
-    		'phoneNumber' => 'required|regex:/(۰۹)[۰-۹]{8}/|regex:/(09)[0-9]{8}/',
-    		'emailAddress' => ''
+    		'phoneNumber' => 'required|regex:/(۰۹)[۰-۹]{9}/|regex:/(09)[0-9]{9}/',
     	]);
     	// get first and last name form name column
     	$data = $req->all();
@@ -29,7 +28,6 @@ class Client extends Controller
     	$req->validate([
     		'name' => 'required|max:255',
     		'phoneNumber' => 'required|regex:/(09)[0-9]{8}/',
-    		'emailAddress' => ''
     	]);
     	// get first and last name form name column
     	$data = $req->all();
