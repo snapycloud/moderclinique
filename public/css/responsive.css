@@ -2589,4 +2589,17 @@
         width: 100%;
         height: 100%;
     }
+	.ht__header__top__p__right {
+		width: 100% !important;
+	}
+	.ht__header__top__p__left {
+		width: 100% !important;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
 }
+
+
+
+
