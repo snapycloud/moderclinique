@@ -78,8 +78,8 @@ class PageController extends Controller
         $service = $this->api()->request('get', 'KnowledgeBaseArticle/' . $response['list'][0]['id']);
 
         $service['body'] = str_replace(
-            "?entryPoint=attachment&amp;id=", 
-            "http://dev.modernclinique.com/image/", 
+            "?entryPoint=attachment&amp;id=",
+            "https://modernclinique.com/image/",
             $service['body']
         );
 
@@ -121,8 +121,8 @@ class PageController extends Controller
         }
 
          $data['body'] = str_replace(
-            "?entryPoint=attachment&amp;id=", 
-            "http://dev.modernclinique.com/image/", 
+            "?entryPoint=attachment&amp;id=",
+            "https://modernclinique.com/image/",
             $data['body']
         );
 
@@ -142,7 +142,7 @@ class PageController extends Controller
                 'where[0][type]'    =>  'linkedWith',
                 'where[0][value][]' => '5ccc24f7daa85f6ea'
             ]);
-                 
+
           cache()->put($cache_key, $data);
         }
 

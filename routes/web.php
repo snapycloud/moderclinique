@@ -17,14 +17,19 @@ Route::get('image/{id}', function($id){
     $cache_key = 'slider-' . $id;
     $image = cache()->get($cache_key);
 	$cat = App\Attachment::find($id);
-    if(!$image) {
+    if($image) {
 	    header('Pragma: public');
 	    header('Cache-Control: max-age=360000, must-revalidate');
 	    header('Content-Type: ' . $cat->type);
 
         echo $image;
     }
-	$image = file_get_contents('/home/production/onpermise/5ccc0902cd2ca7d50/data/upload/' . $cat->id );
+    $id = $cat->id;
+    if($cat->source_id) {
+        $id = $cat->source_id;
+    }
+
+	$image = file_get_contents('/home/production/onpermise/5ccc0902cd2ca7d50/data/upload/' . $id );
     cache()->put($cache_key, $image);
     header('Pragma: public');
 	header('Cache-Control: max-ag  e=360000, must-revalidate');
