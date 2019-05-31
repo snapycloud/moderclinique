@@ -11,7 +11,10 @@ class PageController extends Controller
         $slider = $this->api()->request('get', 'KnowledgeBaseArticle', [
             'where[0][attribute]' => 'categories',
             'where[0][type]'    =>  'linkedWith',
-            'where[0][value][]' => '5ccc25026b4a0ad50'
+            'where[0][value][]' => '5ccc25026b4a0ad50',
+            'where[1][type]' => 'in',
+            'where[1][attribute]' => 'status',
+            'where[1][value]' => 'Published'
         ]);
 
         $data = cache()->get('article-list');
@@ -140,7 +143,10 @@ class PageController extends Controller
           $data = $this->api()->request('get', 'KnowledgeBaseArticle', [
                 'where[0][attribute]' => 'categories',
                 'where[0][type]'    =>  'linkedWith',
-                'where[0][value][]' => '5ccc24f7daa85f6ea'
+                'where[0][value][]' => '5ccc24f7daa85f6ea',
+                'where[1][type]' => 'in',
+                'where[1][attribute]' => 'status',
+                'where[1][value]' => 'Published'
             ]);
 
           cache()->put($cache_key, $data);

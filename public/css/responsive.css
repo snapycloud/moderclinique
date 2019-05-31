@@ -1452,8 +1452,10 @@
 		width: 100%;
 	}
 	.newsletter__form {
-		margin-top: 35px;
-		min-width: 100%;
+		/*margin-top: 35px;*/
+		/*min-width: 100%;*/
+		margin-top: 69px;
+    	min-width: 100%;
 	}
 	.htc__subscribe__inner h2 {
 		font-size: 25px;
@@ -2491,6 +2493,9 @@
 	}
 	.newsletter_section_title  {
 		width: 100% !important;
+		top: 0px;
+    position: absolute;
+    right: 10px;
 	}
 }
 /* Medium mobile :577px. */
