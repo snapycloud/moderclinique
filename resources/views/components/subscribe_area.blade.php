@@ -3,11 +3,6 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="htc__subscribe__inner">
-                            <div class="newsletter_section_title text-right">
-                                <h2 class="text-theme">مشاوره رایگان</h2>
-                                <h4>در اولین فرصت با شما تماس می‌گیریم</h4>
-                            </div>
-                            
                             <div class="newsletter__form">
                                 <div class="input__box">
                                     <form action="#">
@@ -18,6 +13,13 @@
                                     </form>
                                 </div>        
                             </div>
+                            
+                            <div class="newsletter_section_title text-right">
+                                <h2 class="text-theme">مشاوره رایگان</h2>
+                                <h4>در اولین فرصت با شما تماس می‌گیریم</h4>
+                            </div>
+                            
+                            
                             
                             
                         </div>

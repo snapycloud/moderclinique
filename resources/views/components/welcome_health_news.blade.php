@@ -8,10 +8,13 @@
                     </div>
                 </div>
             
+            <?php $count = 0; ?>
             @foreach($data as $item)
 
+            @if($count <= 4)
+            <?php $count++; ?>
                 <div class="row htc__blog__wrap clearfix mt--30">
-                    <div class="col-lg-12 col-xl-12 col-md-12 col-12">
+                    <div class="col-lg-6 col-xl-6 col-md-12 col-12">
                          <div class="single_latest_post flex left_grid">
                             <div class="ht__blog__thumb">
                                 <a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">
@@ -30,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-
+            @endif
             @endforeach
             </div>
         </section>

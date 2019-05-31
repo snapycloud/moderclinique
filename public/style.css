@@ -4367,8 +4367,9 @@ footer.footer_area {
     font-weight: 400;
     line-height: 27px;
     margin-top: 25px;
-    padding-right: 15%;
-    text-align: right
+    _padding-right: 15%;
+    text-align: right;
+    font-family: "Iran Yekan Light";
 }
 
 .project_content h3 {
