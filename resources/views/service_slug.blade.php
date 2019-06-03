@@ -26,7 +26,7 @@
 
 </p>
 <a href="{{ route('faq') }}">پرسش های متداول </a>
-<a href="{{ route('faq') }}">تماس با ما </a>
+<a href="{{ route('contact') }}">تماس با ما </a>
                             </div>
                         </div>
                     </div>
