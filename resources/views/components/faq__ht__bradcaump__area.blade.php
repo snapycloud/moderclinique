@@ -31,7 +31,7 @@
                     <div class="htc__try__solveleft">
                         <div class="htc__try__details">
                             <div class="try_solve_middle_inner">
-                                <h2>شادی چیزی بیش از سلامت و حافظه بد نیست.</h2>
+                                <h2>ما به شما جوانی و زیبایی را هدیه می دهیم</h2>
                             </div>
                         </div>
                     </div>
