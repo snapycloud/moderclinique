@@ -3,7 +3,7 @@
                     <div class="row align-items-center">
                         <div class="col-md-1 col-lg-1 col-sm-6 col-xs-7">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{{ route('welcome') }}">
                                     <img width="80px" src="{{ asset('images/logo/logo.png') }}" alt="logo">
                                 </a>
                             </div>
@@ -44,9 +44,12 @@
                                     <ul>
                                     <li class="drop"><a href="{{ route('welcome') }}">صفحه اصلی</a></li>
                                     <li class="drop"><a href="#">خدمات</a>
-                                        <ul>
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="single-services.html">Single Service </a></li>
+                                        <ul class="dropdown">
+                                              @foreach($menu_services as $item)
+                                                <li>
+                                                    <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
+                                                </li>
+                                            @endforeach
                                         </ul>
                                     </li>
                                     <li class="drop"><a href="{{ route('about') }}">مقالات</a></li>
