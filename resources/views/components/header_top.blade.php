@@ -13,7 +13,7 @@
                         </div>
                         <div class="col-lg-6 col-md-4 col-12">
                             <div class="ht__header__top__right">
-                                <p class="">کلینیک تخصصی پوست و مو و زیبایی - مدرن <br> همه روزه ۸:۰۰ صبح الی ۹:۰۰ شب <span><i class="zmdi zmdi-alarm-check"></i></span></p>
+                                <p class=""><storng style="font-size: 16px;">کلینیک تخصصی پوست و مو و زیبایی - مدرن </storng><br> همه روزه ۸:۰۰ صبح الی ۹:۰۰ شب <span><i class="zmdi zmdi-alarm-check"></i></span></p>
                             </div>
                         </div>
                     </div>

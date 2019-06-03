@@ -153,6 +153,7 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap
+    height: 100%;
 }
 
 .logo a {
@@ -199,7 +200,8 @@ ul.main__menu>li:hover>a {
 .ht__header__top__right p {
     color: #666;
     font-size: 13px;
-    font-weight: 400
+    font-weight: 400;
+    height: 100%;
 }
 
 .ht__header__top__p__right {
