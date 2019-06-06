@@ -10,7 +10,7 @@
                                 </div>
                                 <div class="single_footer_menu text-right">
                                     <ul>
-                                        <li><a href="{{ route('welcome') }}">قوانین و مقررات</a></li>
+                                        <li><a href="{{ route('terms') }}">قوانین و مقررات</a></li>
                                         <li><a href="{{ route('about') }}">درباره ما</a></li>
                                         <li><a href="{{ route('contact') }}">تماس با ما</a></li>
                                     </ul>
@@ -44,8 +44,8 @@
                                 <div class="single_footer_menu text-right">
                                     <ul>
                                         <li><a href="{{ route('terms') }}">قوانین و مقررات</a></li>
-                                        <li><a href="#">راهنمای مراقبت</a></li>
-                                        <li><a href="#">پشیتبانی</a></li>
+                                        {{-- <li><a href="#">راهنمای مراقبت</a></li> --}}
+                                        {{-- <li><a href="#">پشیتبانی</a></li> --}}
                                         <li><a href="{{ route('faq') }}">سایت مپ</a></li>
                                     </ul>
                                 </div>
@@ -73,7 +73,9 @@
                         <div class="col-12">
                             <div class="copyright__content">
                                 <div class="copyright__inner">
-                                    <p>قدرت گرفته از <a href="https://snapycloud.com" target="_blank"> پردازش اسنپی</a> تنها سرویس ابری مدیریت کسب و کار</p>
+                                    <p>
+تمامی حقوق این سایت متعلق به مرکز تخصصی مدرن کلینیک می باشد.</p>
+                                    {{-- <p>قدرت گرفته از <a href="https://snapycloud.com" target="_blank"> پردازش اسنپی</a> تنها سرویس ابری مدیریت کسب و کار</p> --}}
                                 </div>
                                 <div class="social__icon">
                                     <a href="https://www.instagram.com/modernclinique/?hl=en" target="_blank"><i class="zmdi zmdi-instagram"></i></a>
