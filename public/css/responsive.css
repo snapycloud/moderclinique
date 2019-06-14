@@ -2605,6 +2605,17 @@
 		margin-bottom: 10px;
 	}
 
+	.res-col {
+		top: 44px;
+		z-index: 99999 !important;
+	}
+	.res-col-top {
+		position: absolute;
+    	top: 10px;
+	}
+}
+
+
 }
 
 
