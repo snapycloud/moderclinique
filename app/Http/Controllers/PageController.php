@@ -47,7 +47,7 @@ class PageController extends Controller
                  $data['list'][$key]['faqs']  = $list;
              }
 
-             cache()->put($cache_key, $data);
+             cache()->put($cache_key, $data, 600);
         }
 
 
@@ -120,7 +120,7 @@ class PageController extends Controller
             ]);
             $data = $this->api()->request('get', 'KnowledgeBaseArticle/' . $response['list'][0]['id']);
 
-            cache()->put($cache_key, $data);
+            cache()->put($cache_key, $data, 600);
         }
 
          $data['body'] = str_replace(
@@ -149,7 +149,7 @@ class PageController extends Controller
                 'where[1][value]' => 'Published'
             ]);
 
-          cache()->put($cache_key, $data);
+          cache()->put($cache_key, $data, 600);
         }
 
 
