@@ -9,6 +9,7 @@
                 </div>
                 <div class="row rtl">
                    
+                   @if($data)
              <?php $count = 0; ?>
             @foreach($data as $item)
             @if($count <= 3)
@@ -32,7 +33,7 @@
                     </div>
                           @endif
             @endforeach                  
-                    
+                    @endif
                 </div>
             </div>
         </section>

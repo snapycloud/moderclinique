@@ -21,7 +21,7 @@ class PageController extends Controller
 
     	return view('welcome', [
             'slider' => $slider['list'],
-            'data' => $data['list']
+            'data' => $data['list'] ?? false
         ]);
     }
 
