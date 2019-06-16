@@ -1258,7 +1258,8 @@ ul.main__menu>li:hover>a {
 }
 
 .htc__gallery__area.gallery--1 {
-    background: url(images/portfolio/project/bg-project.jpg) no-repeat scroll center center/cover
+    _background: url(images/portfolio/project/bg-project.jpg) no-repeat scroll center center/cover
+    background
 }
 
 .section__title p {
