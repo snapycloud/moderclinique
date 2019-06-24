@@ -89,7 +89,7 @@
       loop: true,
       nav:false,
       autoplay: false,
-      items:3,
+      items:1,
       responsiveClass:true,
         responsive:{
             0:{
