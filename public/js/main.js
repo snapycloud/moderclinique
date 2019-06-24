@@ -36,9 +36,9 @@
       loop:true,
       margin:0,
       nav:true,
-      autoplay: false,
+      autoplay: true,
       navText: [ '<i class="zmdi zmdi-chevron-left"></i>', '<i class="zmdi zmdi-chevron-right"></i>' ],
-      autoplayTimeout: 10000,
+      autoplayTimeout: 5000,
       items:1,
       dots: false,
       lazyLoad: true,
@@ -88,7 +88,7 @@
     $('.services__list').owlCarousel({
       loop: true,
       nav:false,
-      autoplay: false,
+      autoplay: true,
       items:1,
       responsiveClass:true,
         responsive:{
@@ -103,6 +103,7 @@
             }
         }
     });
+
     
     //magnificPopup active
     $('.play_video a,.play_button_inner > a').magnificPopup({

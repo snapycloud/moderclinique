@@ -7,26 +7,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="row rtl">
-                   
-                    @foreach($menu_services as $item)
-                    <div class="col-lg-3 col-md-3 col-12">
-                        <div class="singel_project mb--30">
-                            <div class="project_img">
-                                <a href="{{ route('service.slug', [ $item['slug'] ])   }}">
-                                    <img src="{{ route('image', [ $item['coverId'] ]) }}" alt="">
-                                </a>
-                            </div>
-                            <div class="project_content">
-                                <h3 class="text-center">
-                                    <a href="{{ route('service.slug', [ $item['slug'] ])   }}">{{ $item['name'] }}</a>
-                                </h3>
-                                <p>{{ str_limit($item['description'], 100) }}</p>
+                <div class="row">
+                   <div class="services__list owl-carousel">
+                        @foreach($menu_services as $item)
+                        <div class="col-lg-4">
+                            <div class="singel_project mb--30">
+                                <div class="project_img">
+                                    <a href="{{ route('service.slug', [ $item['slug'] ])   }}">
+                                        <img src="{{ route('image', [ $item['coverId'] ]) }}" alt="">
+                                    </a>
+                                </div>
+                                <div class="project_content">
+                                    <h3 class="text-center">
+                                        <a href="{{ route('service.slug', [ $item['slug'] ])   }}">{{ $item['name'] }}</a>
+                                    </h3>
+                                    <p>{{ str_limit($item['description'], 100) }}</p>
+                                </div>
                             </div>
                         </div>
+                        @endforeach
                     </div>
-                     @endforeach                    
-                    
                 </div>
             </div>
         </section>
