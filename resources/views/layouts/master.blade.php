@@ -31,14 +31,16 @@
     <![endif]-->  
 
     <!-- Body main wrapper start -->
-    <div class="wrapper" id="app">
+    <div class="wrapper" >
         @include('components.header')
-        @yield('main')        
-        @include('components.footer')
-        @include('components.menu__nav')
-        <consultation-modal></consultation-modal>
-        <case-modal></case-modal>
-        <contact-modal></contact-modal>
+        <div id="app">  
+          @yield('main')        
+          @include('components.footer')
+          @include('components.menu__nav')
+          <consultation-modal></consultation-modal>
+          <case-modal></case-modal>
+          <contact-modal></contact-modal>
+        </div>
     </div>
 
 
