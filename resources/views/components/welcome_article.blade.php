@@ -3,7 +3,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section__title text-center pb--50">
-                            <h2 class="title__line text--theme">خدمات مدرن کلینیک</h2>
+                            <h2 class="title__line text--theme">آخرین اخبار و مقالات</h2>
                         </div>
                     </div>
                 </div>

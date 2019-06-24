@@ -48,4 +48,25 @@ class Controller extends BaseController
     {
         return $this->client;
     }
+
+    public function getArticaleList()
+    {
+        $cache_key = 'article-list';
+        $data = cache()->get($cache_key);
+
+        if(!$data) {
+          $data = $this->api()->request('get', 'KnowledgeBaseArticle', [
+                'where[0][attribute]' => 'categories',
+                'where[0][type]'    =>  'linkedWith',
+                'where[0][value][]' => '5ccc24f7daa85f6ea',
+                'where[1][type]' => 'in',
+                'where[1][attribute]' => 'status',
+                'where[1][value]' => 'Published'
+            ]);
+
+          cache()->put($cache_key, $data, 129);
+        }
+
+        return $data['list'];
+    }
 }
