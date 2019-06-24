@@ -31,11 +31,13 @@
                 </div>
             </div>
             <!-- Start Google Map -->
-            <div class="htc__google__map">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=tehran%2C%20iran%2C%20%D8%A8%D9%84%D9%88%D8%A7%D8%B1%20%D8%AF%D8%B1%DB%8C%D8%A7&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1300px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1300px;}</style></div>
+
+{{--             <div class="htc__google__map">
                 <div class="map-contacts">
                     <div id="googleMap"></div>
                 </div>
-            </div>
+            </div> --}}
             <!-- End Google Map -->
             <!-- Start Conatact Form -->
             <div class="psy__contact__form">
