@@ -572,7 +572,8 @@ ul.main__menu>li:hover>a {
 
 .slider-wrapper.bg-opacity::before {
     background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#26aef9), to(#22f285)) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #26aef9 0, #22f285 100%) repeat scroll 0 0;
+    _background: rgba(0, 0, 0, 0) linear-gradient(to right, #26aef9 0, #22f285 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.5) linear-gradient(to right, #673AB7 0, #3F51B5 100%) repeat scroll 0 0;
     content: "";
     height: 100%;
     left: 0;
@@ -6343,7 +6344,8 @@ blockquote {
 .menu_activated {
     height: 100%;
     background: #001430;
-    color: #001430
+    color: #001430;
+    z-index: 9999999;
 }
 
 .menu_activated .menu__nav {
