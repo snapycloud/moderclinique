@@ -52,6 +52,15 @@
                                             @endforeach
                                         </ul>
                                     </li>
+                                    <li class="drop"><a href="#">گالری تصاویر</a>
+                                        <ul class="dropdown">
+                                            @foreach($menu_gallery as $item)
+                                                <li>
+                                                    <a href="{{ route('gallery.slug', [$item['slug']]) }}">{{ $item['name'] }}</a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </li>
                                     <li class="drop"><a href="{{ route('about') }}">مقالات</a></li>
                                     <li class="drop"><a href="{{ route('faq') }}">سوالات متداول</a></li>
                                     <li class="drop"><a href="{{ route('about') }}">درباره ما</a></li>
