@@ -43,23 +43,26 @@
                                 <nav>
                                     <ul>
                                     <li class="drop"><a href="{{ route('welcome') }}">صفحه اصلی</a></li>
-                                    <li class="drop"><a href="#">خدمات</a>
-                                        <ul class="dropdown">
+                                    <li class="drop">
+                                        <a href="#">خدمات</a>
+                                        <ul style="display: none;">
                                               @foreach($menu_services as $item)
                                                 <li>
                                                     <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
                                                 </li>
                                             @endforeach
                                         </ul>
+                                        <a class="mean-expand" href="#" style="font-size: 18px">+</a>
                                     </li>
                                     <li class="drop"><a href="#">گالری تصاویر</a>
-                                        <ul class="dropdown">
+                                        <ul style="display: none;">
                                             @foreach($menu_gallery as $item)
                                                 <li>
                                                     <a href="{{ route('gallery.slug', [$item['slug']]) }}">{{ $item['name'] }}</a>
                                                 </li>
                                             @endforeach
                                         </ul>
+                                        <a class="mean-expand" href="#" style="font-size: 18px">+</a>
                                     </li>
                                     <li class="drop"><a href="{{ route('about') }}">مقالات</a></li>
                                     <li class="drop"><a href="{{ route('faq') }}">سوالات متداول</a></li>

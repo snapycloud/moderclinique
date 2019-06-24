@@ -54,8 +54,6 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"></script>
-    <script src="{{ asset('js/map.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
     
 <script>
