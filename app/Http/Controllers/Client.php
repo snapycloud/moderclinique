@@ -18,7 +18,7 @@ class Client extends Controller
     	if(count($name) == 2) {
     		$data['firstName'] = $name[0];
     		$data['lastName'] = $name[1];
-    	}} else {
+    	} else {
             $data['firstName'] = "";
             $data['lastName'] = $data['name'];
         }
