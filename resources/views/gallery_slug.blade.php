@@ -1,4 +1,4 @@
-
+﻿
 
 @extends('layouts.master')
 @section('main')
@@ -8,6 +8,9 @@
                     <div class="col-12">
                         <div class="bradcaump__title text-center">
                             <h2 class="bradcaump-title">گالری تصاویر " {{ $images['name'] }} "</h2>
+@section('pageTitle')
+    {{ $images['name'] }}
+@endsection
                         </div>
                     </div>
                 </div>

@@ -21,6 +21,7 @@
                                 <div class="blog__post_title">
                                     <h2 class="text-right"><a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">{{ $item['name'] }}</a></h2>
                                     <p class="text-right">{!! str_limit($item['description'], 100) !!}</p>
+
                                    <a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}" class="btn-more text-right">ادامه مطلب</a>
                                 </div>
                                 

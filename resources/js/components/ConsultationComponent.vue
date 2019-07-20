@@ -23,7 +23,7 @@
                                         </div>
                                         <div class="htc__app__box__inner">
                                             <div class="htc__app__box">
-                                                <input type="email" v-model="data.emailAddress" placeholder="پست الکترونیک">
+                                                <input type="email" v-model="data.emailAddress" placeholder="پست الکترونیک (اختیاری)">
                                             </div>
                                         </div> 
                                         <div class="htc__app__box__inner">

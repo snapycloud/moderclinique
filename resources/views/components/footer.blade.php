@@ -1,4 +1,4 @@
-        <footer class="footer_area">
+﻿        <footer class="footer_area">
             <div class="footer_top">
                 <div class="container">
                     <div class="row">
@@ -74,7 +74,7 @@
                             <div class="copyright__content">
                                 <div class="copyright__inner">
                                     <p>
-تمامی حقوق این سایت متعلق به مرکز تخصصی مدرن کلینیک می باشد.</p>
+تمامی حقوق این سایت متعلق به مرکز تخصصی  کلینیک مدرن می باشد.</p>
                                     {{-- <p>قدرت گرفته از <a href="https://snapycloud.com" target="_blank"> پردازش اسنپی</a> تنها سرویس ابری مدیریت کسب و کار</p> --}}
                                 </div>
                                 <div class="social__icon">

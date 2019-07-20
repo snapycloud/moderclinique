@@ -1,9 +1,9 @@
-        <div class="ht__bradcaump__area">
+﻿        <div class="ht__bradcaump__area">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="bradcaump__title text-center">
-                            <h2 class="bradcaump-title">قوانین و مقررات</h2>
+                            <h2 class="bradcaump-title">@section('pageTitle', 'قوانین و مقررات')</h2>
                         </div>
                     </div>
                 </div>

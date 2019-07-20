@@ -13,7 +13,7 @@
                         Start Single Items
                         <div class="ht__sin__solve">
                             <div class="ser__content">
-                                <h4><a href="#{{ $item['id']}}">{{ $item['name'] }}</a></h4>
+                                <h4><i class="fa fa-question-circle" aria-hidden="true"></i><a href="#{{ $item['id']}}">{{ $item['name'] }}</a></h4>
                                 {{-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                             </div>
                         </div>
@@ -27,7 +27,7 @@
         <section class="htc__try__solve__area">
             <div class="container-fluid">
                  
-                <div class="home--try" style="background: rgba(0, 0, 0, 0) url('images/about/2.png') no-repeat scroll 0 0 / cover;">
+                <div class="home--try" style="background: rgba(0, 0, 0, 0) url('images/about/2.png')  no-repeat scroll 0 0 / cover;">
                     <div class="htc__try__solveleft">
                         <div class="htc__try__details">
                             <div class="try_solve_middle_inner">
@@ -38,22 +38,6 @@
                 </div>
                 
                 <div class="row">
-                    <div class="offset-lg-5 col-lg-7 col-md-12 col-12">
-                        <div class="htc__solve__items">
-                            <div class="htc__solve__content pb--80">
-                                <!-- Start Single Items -->
-                                @foreach($data as $item)
-                                <div class="ht__sin__solve">
-                                    <div class="ser_icon">
                                     </div>
-                                    <div class="ser__content">
-                                        <h4><a href="#{{ $item['id']}}">{{ $item['name'] }}</a></h4>
-                                    </div>
-                                </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>

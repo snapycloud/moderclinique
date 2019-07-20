@@ -3,7 +3,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="bradcaump__title text-center">
-                            <h2 class="bradcaump-title">با ما در تماس باشید</h2>
+                            <h2 class="bradcaump-title">@section('pageTitle', 'با ما در تماس باشید')</h2>
                         </div>
                     </div>
                 </div>

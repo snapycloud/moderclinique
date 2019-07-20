@@ -9,5 +9,4 @@
         @include('components.customer')
         @include('components.appointment')
         @include('components.welcome_article')
-        @include('components.subscribe_area')
 @stop

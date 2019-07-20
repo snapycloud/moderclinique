@@ -1,4 +1,4 @@
-
+﻿
 (function($) {
     'use strict';
 
@@ -201,7 +201,7 @@
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(35.733538, 51.868857),
                 map: map,
-                title: 'مدرن کلینیک',
+                title: 'کلینیک مدرن',
                 icon: 'images/icons/map.png',
                 animation:google.maps.Animation.BOUNCE
 

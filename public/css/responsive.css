@@ -11,6 +11,10 @@
 		right: -25px;
 		width: 50%;
 	}
+button.btn.btn-link h2 {
+    font-size: 18px;
+}
+
 	.htc__solve__items {
 		padding: 100px 0 93px 35px;
 	}
@@ -103,7 +107,7 @@
 		left: 2%;
 	}
 	.htc__try__details {
-		padding: 80px 40px 80px 40px;
+		padding: 59px 40px 80px 40px;
 	}
 	.htc__try__solveleft {
 		padding: 70px 32px;
@@ -356,7 +360,8 @@
 		position: inherit;
 		width: 100%;
 	}
-	.ht__header__top__left p {
+	
+ p {
 		margin-right: 25px;
 		padding: 19px 25px 19px 0;
 	}
@@ -566,7 +571,8 @@
 	.container {
 		max-width: 720px;
 	}
-	.ht__header__top__left p {
+	
+ p {
 		margin-right: 0;
 	}
 	.ht__header__top__left p {
@@ -807,6 +813,12 @@
 	.services_details_content_inner.mt--120 {
 		margin-top: 90px;
 	}
+        .btn-link {
+    display: contents;
+    font-size: 12px;
+  
+}
+
 	.addition_support .best_image_inner {
 		margin-top: 50px;
 	}
@@ -1263,6 +1275,10 @@
 /* small Mobile :767px. */
 
 @media (max-width: 767px) {
+
+button.btn.btn-link h2 {
+    font-size: 15px;
+}
 	.container {
 		max-width: 100%
 	}
@@ -1274,15 +1290,23 @@
 	.ht__header__top__left {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-box-pack: center;
+				-webkit-box-pack: center;
 		-ms-flex-pack: center;
 		justify-content: center;
 	}
 	.ht__header__top__left p:last-child {
-		padding-top: 12px;
+		    padding-top: 12px;
+                   font-size: 11px;
+                   margin-top: 10px;
 	}
+	.ht__header__top__left span i {
+                   display: none;
+         }
+        .ht__header__top__p__left.social_icon i {
+   		 font-size: 18px;
+  		  margin-right: 9px;
+	}
+
 	.ht__header__top__right {
 		padding: 8px 0 16px;
 	}
@@ -1621,9 +1645,10 @@
 	.serices_details_content > h2 {
 		font-size: 24px;
 	}
-	.serices_details_content {
-		padding: 45px 30px;
-	}
+  .btn-link {
+    display: contents;
+    font-size: 12px;}
+	
 	.additional_suupor_list li {
 		font-size: 14px;
 	}
@@ -1839,7 +1864,7 @@
 	}
 	.ht__header__top__left {
 		text-align: center;
-		margin-bottom: 3px;
+		margin-bottom: 60px;
 	}
 	.htc__try__solveleft {
 		padding: 70px 0;
@@ -2606,8 +2631,7 @@
 	}
 
 	.res-col {
-		top: 44px;
-		z-index: 99999 !important;
+		top: 60px;
 	}
 	.res-col-top {
 		position: absolute;

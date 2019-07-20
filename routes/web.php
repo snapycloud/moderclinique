@@ -29,7 +29,8 @@ Route::get('image/{id}', function($id){
         $id = $cat->source_id;
     }
 
-	$image = file_get_contents('/home/production/onpermise/5ccc0902cd2ca7d50/data/upload/' . $id );
+	//$image = file_get_contents('/home/production/onpermise/5ccc0902cd2ca7d50/data/upload/' . $id );
+	$image = file_get_contents('/home/apps/5ccc0902cd2ca7d50/data/upload/' . $id );
     cache()->put($cache_key, $image);
     header('Pragma: public');
 	header('Cache-Control: max-ag  e=360000, must-revalidate');

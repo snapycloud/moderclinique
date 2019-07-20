@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------------------------------
+﻿/*-----------------------------------------------------------------------------------
 
   Template Name: Curex - Medical Clinic Service Html Template
   Description: Curex is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
@@ -21267,3 +21267,4 @@ jQuery(document).ready(function($){
     if(section.parents('.no-csstransitions').length > 0 ) animateLayer(section.find('.cd-modal-bg'), 1, false);
   }
 });
+

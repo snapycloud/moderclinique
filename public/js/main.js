@@ -57,6 +57,7 @@
         }
       }
     });
+
     //Brand carousel Slider
     $('.our__brand_list').owlCarousel({
       loop: true,
@@ -87,8 +88,10 @@
 
     $('.services__list').owlCarousel({
       loop: true,
-      nav:false,
+      nav:true,
       autoplay: true,
+      navText: [ '<i class="zmdi zmdi-chevron-left"></i>', '<i class="zmdi zmdi-chevron-right"></i>' ],
+
       items:1,
       responsiveClass:true,
         responsive:{

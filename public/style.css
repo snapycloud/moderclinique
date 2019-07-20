@@ -439,7 +439,6 @@ ul.main__menu>li:hover>a {
 
 .mean-container .mean-nav>ul {
     max-height: 300px;
-    overflow-x: scroll
 }
 
 .mainmenu__wrap {
@@ -1213,8 +1212,9 @@ ul.main__menu>li:hover>a {
     color: #001430;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 17px;
-    text-transform: capitalize
+    margin-bottom: 59px;
+    text-transform: capitalize;
+    text-align: right;
 }
 
 .ht__sin__solve p {
@@ -1227,7 +1227,8 @@ ul.main__menu>li:hover>a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+direction: rtl;
 }
 
 .ht__sin__solve {
@@ -1237,7 +1238,9 @@ ul.main__menu>li:hover>a {
     min-width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+direction: rtl;
+
 }
 
 .htc__solve__items {
@@ -3884,11 +3887,9 @@ h2.psy__blog__title {
 }
 
 .home--try {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 41.5%
+      position: relative;
+    width: 100%;
+    z-index: 2;
 }
 
 .psy__single__service {
@@ -5195,11 +5196,10 @@ a.ui-state-default {
 }
 
 .serices_details_content {
-    padding: 45px 40px;
+    padding: 13px 15px;
     direction: rtl;
-    text-align: right
+    text-align: right;
 }
-
 .serices_details_content>p {
     color: #001430;
     line-height: 27px;
@@ -6497,4 +6497,31 @@ blockquote {
     position: relative;
     text-transform: capitalize;
     z-index: 9
+}
+i.fa.fa-question-circle {
+    color: #d2d2d2;
+    margin-left: 10px;
+}
+
+.services__list.owl-carousel .owl-nav>.owl-next {
+    left: auto;
+    right: 30px;
+}
+.services__list.owl-carousel .owl-nav>div {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    font-size: 22px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+    width: 50px;
+    margin-top: -25px;
+  opacity:0.6;
+    left: 30px;
 }

@@ -1,9 +1,9 @@
-        <section class="htc__gallery__area gallery--1 pt--100 pb--70">
+﻿        <section class="htc__gallery__area gallery--1 pt--100 pb--70">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section__title text-center pb--50">
-                            <h2 class="title__line text--theme">خدمات مدرن کلینیک</h2>
+                            <h2 class="title__line text--theme"> خدمات  کلینیک مدرن</h2>
                         </div>
                     </div>
                 </div>
