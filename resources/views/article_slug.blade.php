@@ -110,11 +110,11 @@
                                 <div class="sidebar_title">
                                     <h3>تگ ها</h3>
                                 </div>
-                                @if(count($article['tags']))
+                                @if($article['tags'] != null)
                                 <div class="post_categories">
                                     <ul>
                                         @foreach($article['tags'] as $tag)
-                                          <li><a href=""><p>{{ $tag }}</p></a></li>
+                                          <li><a href="{{ route('tags', $tag) }}"><p>{{ $tag }}</p></a></li>
                                         @endforeach
                                     </ul>
                                 </div>

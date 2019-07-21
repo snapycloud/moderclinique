@@ -10,6 +10,7 @@ Route::get('gallery/{slug}', 'PageController@getGalleryBySlug')->name('gallery.s
 
 Route::get('article', 'PageController@getKnowledgeBaseArticle')->name('knowledgeBaseArticle');
 Route::get('article/{slug}', 'PageController@getKnowledgeBaseArticleBySlug')->name('knowledgeBaseArticle.slug');
+Route::get('article/tags/{tag}', 'PageController@getKnowledgeBaseArticleByTags')->name('tags');
 
 
 

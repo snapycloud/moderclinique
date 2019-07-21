@@ -141,5 +141,33 @@ class PageController extends Controller
             'data' => $this->getArticaleList() ?? false
         ]);
     }
+
+    public function getKnowledgeBaseArticleByTags($tag)
+    {
+
+        $cache_key = 'article-list-tags-' . $tag;
+        $data = cache()->get($cache_key);
+
+        if(!$data) {
+          $data = $this->api()->request('get', 'KnowledgeBaseArticle', [
+                'where[0][attribute]' => 'categories',
+                'where[0][type]'    =>  'linkedWith',
+                'where[0][value][]' => '5ccc24f7daa85f6ea',
+                'where[1][type]' => 'in',
+                'where[1][attribute]' => 'status',
+                'where[1][value]' => 'Published',
+                'where[0][type]' => 'arrayAnyOf',
+                'where[0][attribute]' => 'tags',
+                'where[0][value][]' => $tag
+            ]);
+
+          cache()->put($cache_key, $data, 60);
+        }
+
+        // dd($data);
+       return view('article', [
+            'data' => $data['list']
+        ]);
+    }
 }
 
