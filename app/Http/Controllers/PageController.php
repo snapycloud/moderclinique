@@ -127,8 +127,11 @@ class PageController extends Controller
             $data['body']
         );
 
+         // dd($data);
+
         return view('article_slug', [
-            'article' => $data
+            'article' => $data,
+            'data' => $this->getArticaleList() ?? false
         ]);
     }
 

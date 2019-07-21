@@ -5371,18 +5371,18 @@ a.ui-state-default {
 
 .single_post_left_meta li,
 .single_post_right_meta>ul li {
-    border-right: 1px solid #26aef9;
+    border-left: 1px solid #26aef9;
     color: #26aef9;
     line-height: 1;
-    margin-right: 15px;
-    padding-right: 15px
+    margin-left: 15px;
+    padding-left: 15px
 }
 
 .single_post_left_meta li:last-child,
 .single_post_right_meta>ul li:last-child {
-    border-right: 0 none;
-    margin-right: 0;
-    padding-right: 0
+    border-left: 0 none;
+    margin-left: 0;
+    padding-left: 0
 }
 
 .post_excerpt {
