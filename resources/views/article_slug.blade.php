@@ -59,7 +59,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="post_excerpt">
+                                <div class="post_excerpt text-right">
                                     <p>
                                             {!! $article['body'] !!}
                                     </p>
