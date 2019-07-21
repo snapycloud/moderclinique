@@ -30,7 +30,7 @@
 
 
 
-                     
+
         <div class="our_blog_area ptb--100">
             <div class="container">
                 <div class="row">
@@ -110,6 +110,7 @@
                                 <div class="sidebar_title">
                                     <h3>تگ ها</h3>
                                 </div>
+                                @if(count($article['tags']))
                                 <div class="post_categories">
                                     <ul>
                                         @foreach($article['tags'] as $tag)
@@ -117,6 +118,7 @@
                                         @endforeach
                                     </ul>
                                 </div>
+                                @endif
                                 
                             </div>
 
