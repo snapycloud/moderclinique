@@ -55,15 +55,15 @@
                                     @foreach($tree['childList'] as $childList)
                                         @if($childList['id'] == '5d32bc8a30564c349')
                                             <li class="dropdown-submenu">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ch1{{ $childList['name'] }}</a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ $childList['name'] }}</a>
                                                 @foreach($childList['listTree']['list'] as $child)
                                                     @if(count($child['links']))
                                                         <li class="dropdown-submenu">
-                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">22{{ $child['name'] }}</a>
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ $child['name'] }}</a>
                                                             <ul class="dropdown-menu">
                                                                 @foreach($child['links']['list'] as $item)
                                                                     <li class="dropdown-submenu">
-                                                                        <a href="{{ route('service.slug', [$item['slug']])   }}">33{{ $item['name'] }}</a>
+                                                                        <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
                                                                     </li>
                                                                 @endforeach
                                                             </ul>
@@ -80,7 +80,7 @@
                                         <ul class="dropdown-menu">
                                             @foreach($childList['links']['list'] as $item)
                                                 <li>
-                                                    <a href="{{ route('service.slug', [$item['slug']])   }}">11{{ $item['name'] }}</a>
+                                                    <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
                                                 </li>
                                             @endforeach
                                         </ul>
