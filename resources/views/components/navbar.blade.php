@@ -1,4 +1,4 @@
-            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+﻿            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
                 <div class="container navbar-container">
                     <div class="row align-items-center">
                         <div class="col-md-1 col-lg-1 col-sm-6 col-xs-7">
@@ -17,10 +17,30 @@
                                             @foreach($menu_services as $item)
                                                 <li>
                                                     <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
-                                                </li>
+
+
+                                                          </li>
+
+                                            @endforeach
+
+     
+                                        </ul>
+                                    </li>
+
+    <li class="drop"><a href="#">خدمات پوست</a>
+                                        <ul class="dropdown">
+                                            @foreach($submenu_services as $item)
+                                                <li>
+                                                    <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
+
+
+                                                          </li>
+
                                             @endforeach
                                         </ul>
                                     </li>
+
+                
                                     <li class="drop"><a href="#">گالری تصاویر</a>
                                         <ul class="dropdown">
                                             @foreach($menu_gallery as $item)
@@ -64,7 +84,7 @@
                                         </ul>
                                         <a class="mean-expand" href="#" style="font-size: 18px">+</a>
                                     </li>
-                                    <li class="drop"><a href="{{ route('about') }}">مقالات</a></li>
+                                    <li class="drop"><a href="{{ route('knowledgeBaseArticle') }}">مقالات</a></li>
                                     <li class="drop"><a href="{{ route('faq') }}">سوالات متداول</a></li>
                                     <li class="drop"><a href="{{ route('about') }}">درباره ما</a></li>
                                     <li class="drop"><a href="{{ route('contact') }}">تماس با ما</a></li>

@@ -28,8 +28,23 @@ class Controller extends BaseController
             'where[0][value][]' => '5ccc24e2d2fef7fcf',
             'where[1][type]' => 'in',
             'where[1][attribute]' => 'status',
-            'where[1][value]' => 'Published'
+            'where[1][value]' => 'Published',
+            'orderBy'=>'order',
+            'order'=>'asc'
         ]);
+
+        $submenu_services = $this->api()->request('get', 'KnowledgeBaseArticle', [
+            'where[0][attribute]' => 'categories',
+            
+            'where[0][value][]' => '5cea4c522b0f569e4',
+            'where[1][type]' => 'in',
+            'where[1][attribute]' => 'status',
+            'where[1][value]' => 'Published',
+            'orderBy'=>'order',
+            'order'=>'asc'
+        ]);
+
+
 
         $menu_gallery = $this->api()->request('get', 'KnowledgeBaseArticle', [
             'select' => 'name,slug',
@@ -42,6 +57,7 @@ class Controller extends BaseController
         ]);
 
         View::share('menu_services', $menu_services['list']);
+        View::share('submenu_services', $submenu_services['list']);
         View::share('menu_gallery', $menu_gallery['list']);
     }
 

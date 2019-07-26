@@ -2535,7 +2535,7 @@ direction: rtl;
 
 .bradcaump__title h2 {
     color: #343940;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 800;
     text-transform: uppercase
 }
@@ -5404,7 +5404,6 @@ blockquote {
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
-    margin: 0 40px;
     padding: 50px 130px;
     text-align: center;
     position: relative;
@@ -5664,7 +5663,7 @@ blockquote {
     color: #001430;
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 30px
+    margin-bottom:5px
 }
 
 .single_recent_post {
@@ -5698,7 +5697,7 @@ blockquote {
     color: #001430;
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 35px
+    margin-bottom: 5px
 }
 
 .search_form input {
@@ -5787,7 +5786,8 @@ blockquote {
 }
 
 .sidebar_right {
-    padding-left: 35px
+    padding: 15px;
+    background-color: #f9f9f9;
 }
 
 .box-layout {
@@ -6524,4 +6524,17 @@ i.fa.fa-question-circle {
     margin-top: -25px;
   opacity:0.6;
     left: 30px;
+}
+
+.post_tag {
+    display: inline-block;
+}
+
+.tag_title {
+    display: inline-block;
+}
+
+.sidebar_title {
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 16px;
 }

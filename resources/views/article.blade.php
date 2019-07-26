@@ -9,6 +9,8 @@
             <div class="container">
                 <div class="row  rtl">
                     @foreach($data as $item)
+
+    
                     <div class="grid-item col-lg-4 col-md-4 col-12">
                         <div class="single_latest_post mb--30">
                             <div class="ht__blog__thumb">
@@ -44,6 +46,7 @@
                             </div>
                         </div>
                     </div> 
+               
                     @endforeach
                 </div>
 

@@ -3,6 +3,48 @@
 @extends('layouts.master')
 @section('main')
 
+
+ <script type="application/ld+json">
+
+
+{
+  "@context": "https://schema.org/",
+  "@type": "Review",
+"datePublished" :"{{ $article['createdAt'] }}",
+  "itemReviewed": {
+    "@type": "Thing",
+    "image": "{{ route('image', [ $article['coverId'] ]) }}",
+    "name": "{{ $article['name'] }}",
+    "telephone": "021-87700000",
+    "address" :{
+      "@type": "PostalAddress",
+      "streetAddress": "تهران - سعادت آباد بلواردریا بین خیابان گلها و خیابان رامشه پلاک ۷۰ طبقه ۳",
+      "addressLocality": "تهران ",
+        "addressCountry": "تهران "
+    }
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5"
+  },
+  "name": "{{ $article['name'] }}",
+  "author": {
+    "@type": "Person",
+    "name": "modernclinique"
+  },
+  "reviewBody": "{!!str_limit($article['description'],160,'...')!!}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "modernclinique"
+  }
+}
+
+
+
+
+</script>
+
+
 <div class="ht__bradcaump__area">
             <div class="container">
                 <div class="row">
@@ -34,6 +76,39 @@
         <div class="our_blog_area ptb--100">
             <div class="container">
                 <div class="row">
+
+                <div class="col-lg-4 col-md-8 col-12">
+                        <div class="sidebar_right">  
+                             
+
+                              <div class="widget recent_post text-right">
+                                <div class="sidebar_title">
+                                    <h3>آخرین مطالب</h3>
+                                </div>
+                                @if($data)
+                                    <?php $count = 0; ?>
+                                    @foreach($data as $item)
+                                    @if($count <= 6)
+                                    <?php $count++; ?>
+                                        <div class="single_recent_post">
+                                          <div class="recent_post_img">
+                                              <a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}"> <img src="{{ route('image', [ $item['coverId'] ]) }}" alt="{{ $item['name']}}"></a>
+                                          </div>
+                                          <div class="post_content">
+                                              <h3><a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">{{ $item['name'] }}</a></h3>
+                                              <span class="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">{{ $item['createdAt'] }}</span>
+                                          </div>
+                                        </div>
+                                      @endif
+                                    @endforeach                  
+                                @endif
+
+
+                            </div> 
+                            
+                         </div>
+                    </div>
+
                     <div class="col-lg-8 col-md-12 col-12">
                         <div class="post_details_inner">
                             <div class="single_post_thumbnail">
@@ -100,58 +175,29 @@
                             
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-8 col-12">
-                        <div class="sidebar_right">  
-                             
+                 
 
-                          
-                                
-                            <div class="widget cartegories text-right">
-                                <div class="sidebar_title">
-                                    <h3>تگ ها</h3>
-                                </div>
-                                @if($article['tags'] != null)
-                                <div class="post_categories">
-                                    <ul>
-                                        @foreach($article['tags'] as $tag)
-                                          <li><a href="{{ route('tags', $tag) }}"><p>{{ $tag }}</p></a></li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                                @endif
-                                
-                            </div>
-
-                              <div class="widget recent_post text-right">
-                                <div class="sidebar_title">
-                                    <h3>آخرین مطالب</h3>
-                                </div>
-                                @if($data)
-                                    <?php $count = 0; ?>
-                                    @foreach($data as $item)
-                                    @if($count <= 6)
-                                    <?php $count++; ?>
-                                        <div class="single_recent_post">
-                                          <div class="recent_post_img">
-                                              <a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}"> <img src="{{ route('image', [ $item['coverId'] ]) }}" alt="{{ $item['name']}}"></a>
-                                          </div>
-                                          <div class="post_content">
-                                              <h3><a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">{{ $item['name'] }}</a></h3>
-                                              <span class="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">{{ $item['createdAt'] }}</span>
-                                          </div>
-                                        </div>
-                                      @endif
-                                    @endforeach                  
-                                @endif
-
-
-                            </div> 
-                            
-                         </div>
-                    </div>
-                </div>
+    
                 
             </div>
+
+            <div class="widget tag text-right">
+                               
+                                @if($article['tags'] != null)
+                                <div class="post_tag">
+                                    
+                                        @foreach($article['tags'] as $tag)
+                                          <a href="{{ route('tags', $tag) }}">{{ $tag }}</a>,
+                                        @endforeach
+                                    
+                                </div>
+                                @endif
+                                <div class="tag_title">
+                                    <p> برچسب ها : </p>
+                                </div>
+                            </div>
+
+                </div>
         </div>
 
 
