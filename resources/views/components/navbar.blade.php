@@ -12,9 +12,23 @@
                             <nav class="main__menu__nav ">
                                 <ul class="main__menu">
                                     <li class="drop"><a href="{{ route('welcome') }}">صفحه اصلی</a></li>
-                                    <li class="drop"><a href="#">خدمات</a>
-                                        <ul class="dropdown">
-                                            @foreach($menu_services as $item)
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="drop">
+                                        <a href="#" >خدمات</a>
+                    <ul class="dropdown">
+                        @foreach($main_service as $item)
                                                 <li>
                                                     <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
 
@@ -23,22 +37,75 @@
 
                                             @endforeach
 
-     
-                                        </ul>
-                                    </li>
+                        @foreach($list_tree['list'] as $tree)
+                         
+                            
 
-    <li class="drop"><a href="#">خدمات پوست</a>
-                                        <ul class="dropdown">
-                                            @foreach($submenu_services as $item)
+
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ $tree['name']}}</a>
+                            <ul class="dropdown-menu">
+                                @foreach($tree['links']['list'] as $item)
+                                <li>
+                                    <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
+                                </li>
+                                @endforeach
+
+
+                                    @foreach($tree['childList'] as $childList)
+                                        @if($childList['id'] == '5d32bc8a30564c349')
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ch1{{ $childList['name'] }}</a>
+                                                @foreach($childList['listTree']['list'] as $child)
+                                                    @if(count($child['links']))
+                                                        <li class="dropdown-submenu">
+                                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">22{{ $child['name'] }}</a>
+                                                            <ul class="dropdown-menu">
+                                                                @foreach($child['links']['list'] as $item)
+                                                                    <li class="dropdown-submenu">
+                                                                        <a href="{{ route('service.slug', [$item['slug']])   }}">33{{ $item['name'] }}</a>
+                                                                    </li>
+                                                                @endforeach
+                                                            </ul>
+                                                        </li>
+                                                    @endif
+                                                @endforeach
+                                            </li>
+                                        @else
+                                    
+
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ $childList['name'] }}</a>
+                                        @if(count($childList['links']['list']))
+                                        <ul class="dropdown-menu">
+                                            @foreach($childList['links']['list'] as $item)
                                                 <li>
-                                                    <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
-
-
-                                                          </li>
-
+                                                    <a href="{{ route('service.slug', [$item['slug']])   }}">11{{ $item['name'] }}</a>
+                                                </li>
                                             @endforeach
                                         </ul>
+                                        @endif
                                     </li>
+
+@endif
+                                    
+                                    
+                                @endforeach
+                            </ul>
+                        </li>
+                        @endforeach
+
+                    </ul>
+                </li>
+
+
+
+
+
+
+
+
+
 
                 
                                     <li class="drop"><a href="#">گالری تصاویر</a>
