@@ -31,13 +31,10 @@
                         @foreach($main_service as $item)
                                                 <li>
                                                     <a href="{{ route('service.slug', [$item['slug']])   }}">{{ $item['name'] }}</a>
-
-
                                                           </li>
-
                                             @endforeach
 
-                        @foreach($list_tree['list'] as $tree)
+                        {{-- @foreach($list_tree['list'] as $tree)
                          
                             
 
@@ -93,7 +90,7 @@
                                 @endforeach
                             </ul>
                         </li>
-                        @endforeach
+                        @endforeach --}}
 
                     </ul>
                 </li>
