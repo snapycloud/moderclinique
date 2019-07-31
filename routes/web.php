@@ -21,6 +21,7 @@ Route::get('image/{id}', function($id){
     if($image) {
 	    header('Pragma: public');
 	    header('Cache-Control: max-age=360000, must-revalidate');
+	    header('Expires: '. gmdate('D, d M Y H:i:s \G\M\T', time() + 86400));
 	    header('Content-Type: ' . $cat->type);
 
         echo $image;
@@ -31,7 +32,7 @@ Route::get('image/{id}', function($id){
     }
 
 	//$image = file_get_contents('/home/production/onpermise/5ccc0902cd2ca7d50/data/upload/' . $id );
-	$image = file_get_contents('/home/apps/5ccc0902cd2ca7d50/data/upload/' . $id );
+	$image = file_get_contents('/home/apps/5ccc0902cd2ca7d50/data/upload/' . $id);
     cache()->put($cache_key, $image);
     header('Pragma: public');
 	header('Cache-Control: max-ag  e=360000, must-revalidate');

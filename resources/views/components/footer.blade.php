@@ -46,7 +46,6 @@
                                         <li><a href="{{ route('terms') }}">قوانین و مقررات</a></li>
                                         {{-- <li><a href="#">راهنمای مراقبت</a></li> --}}
                                         {{-- <li><a href="#">پشیتبانی</a></li> --}}
-                                        <li><a href="{{ route('faq') }}">سایت مپ</a></li>
                                     </ul>
                                 </div>
                             </div>
