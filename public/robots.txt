@@ -1,2 +1,5 @@
 User-agent: *
-Disallow:
+Allow: /
+User-agent: Googlebot-news
+Allow: /
+Sitemap: https://modernclinique.com/sitemap.xml
