@@ -39,5 +39,5 @@
             </div>
         </div>
 
-
+@include('components.more_article')
 @stop

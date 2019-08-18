@@ -95,6 +95,7 @@ class Controller extends BaseController
         View::share('list_tree', $listTree);
         View::share('main_service', $main_service['list']);
         View::share('menu_gallery', $menu_gallery['list']);
+        View::share('more_article', $this->getArticaleList() ?? false);
     }
 
     public function getListTree($id)
