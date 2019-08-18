@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>کلینیک تخصصی پوست و مو و زیبایی - مدرن |@yield('pageTitle')</title>
+    {{-- {!! SEO::generate() !!} --}}
+    {!! OpenGraph::generate() !!}
+    {!! JsonLd::generate() !!}
+    <title>کلینیک تخصصی پوست و مو و زیبایی - مدرن | @yield('pageTitle')</title>
     <meta property="og:title" content="کلینیک تخصصی پوست و مو و زیبایی - مدرن |@yield('pageTitle')" />
     <meta name="description" content="@yield('description')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
