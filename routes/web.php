@@ -22,7 +22,11 @@ Route::get('image/{id}', function($id){
 	    header('Pragma: public');
 	    header('Cache-Control: max-age=360000, must-revalidate');
 	    header('Expires: '. gmdate('D, d M Y H:i:s \G\M\T', time() + 86400));
+	    header('Content-Length: 42022');
+	    header('Content-Type: ' . 'image/jpeg');
 	    header('Content-Type: ' . $cat->type);
+	    header('Content-Disposition: inline;filename=' . $cat->name);
+
 
         echo $image;
     }
@@ -37,6 +41,7 @@ Route::get('image/{id}', function($id){
     header('Pragma: public');
 	header('Cache-Control: max-ag  e=360000, must-revalidate');
 	header('Content-Type: ' . $cat->type);
+	    header('Content-Length: 42022');
 
     echo $image;
 })->name('image');
