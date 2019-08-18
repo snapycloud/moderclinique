@@ -1,9 +1,7 @@
-
-
 @extends('layouts.master')
 @section('main')
 
-
+@section('pageTitle', 'سوالات متداول')
         @include('components.faq__ht__bradcaump__area')
 
         <div class="services_details">
