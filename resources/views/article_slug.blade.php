@@ -3,6 +3,15 @@
 @extends('layouts.master')
 @section('main')
 
+<style>
+    .star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.star-rating .fa-star{color: yellow;}
+.fa-star{color: yellow;}
+</style>
 
  <script type="application/ld+json">
 
@@ -43,6 +52,9 @@
 
 
 </script>
+
+
+
 
 
 <div class="ht__bradcaump__area">
@@ -96,7 +108,9 @@
                                           </div>
                                           <div class="post_content">
                                               <h3><a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">{{ $item['name'] }}</a></h3>
-                                              <span class="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">{{ $item['createdAt'] }}</span>
+                                              <span class="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">
+                                                  <?php $date = \Morilog\Jalali\CalendarUtils::strftime('Y-m-d', strtotime($item['createdAt']));
+                                                      echo \Morilog\Jalali\CalendarUtils::convertNumbers($date); ?>
                                           </div>
                                         </div>
                                       @endif
@@ -109,6 +123,10 @@
                          </div>
                     </div>
 
+
+
+
+
                     <div class="col-lg-8 col-md-12 col-12">
                         <div class="post_details_inner">
                             <div class="single_post_thumbnail">
@@ -116,19 +134,41 @@
                             </div>
                             <div class="single_post_content">
                                 <div class="single_post_top_contnt">
-                                    <div class="single_post_title">
+                                    <div class="single_post_title text-right">
                                         <h2>{{ $article['name'] }}</h2>
                                     </div>
                                     <div class="single_post_meta">
                                         <div class="single_post_left_meta">
                                             <ul>
-                                                <li>{{ $article['createdAt'] }}</li>
+                                                <li>
+                                                    <?php $date = \Morilog\Jalali\CalendarUtils::strftime('Y-m-d', strtotime($article['createdAt']));
+                                                      echo \Morilog\Jalali\CalendarUtils::convertNumbers($date); ?>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="single_post_right_meta">
+                                            <div class="container rtl text-right">
+
                                             <ul>
                                                 <li> {{ $article['rate'] }}  امتیاز سردبیر</li>
                                                 <li> {{ $article['clidentrate'] }}  امتیاز کاربران</li>
+                                                <li>  <div class="row">
+    <div class="col-lg-12">
+      <div class="star-rating">
+        <span class="fa fa-star-o" data-rating="1"></span>
+        <span class="fa fa-star-o" data-rating="2"></span>
+        <span class="fa fa-star-o" data-rating="3"></span>
+        <span class="fa fa-star-o" data-rating="4"></span>
+        <span class="fa fa-star-o" data-rating="5"></span>
+        <span class="fa fa-star-o" data-rating="6"></span>
+        <span class="fa fa-star-o" data-rating="7"></span>
+        <span class="fa fa-star-o" data-rating="8"></span>
+        <span class="fa fa-star-o" data-rating="9"></span>
+        <input type="hidden" name="whatever1" class="rating-value" value="{{ $article['rate'] }}">
+      </div>
+    </div>
+  </div>
+</div></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -199,6 +239,18 @@
 
                 </div>
         </div>
+
+
+    <div style="display: none;" itemscope itemtype=”http://schema.org/Product”>
+    <img itemprop="image" src="{{ route('image', [ $article['coverId'] ]) }}" alt="{{ $article['name'] }}"/>
+    <span itemprop=”name”>{{ $article['name'] }}</span>
+    <div itemprop=”aggregateRating itemscope itemtype=”http://schema.org/AggregateRating”>
+    <span itemprop=”ratingValue”>{{ $article['rate'] }}</span>
+     از <span itemprop=”bestRating”>10</span>
+    </div>
+    </div>
+
+
 
 
 
