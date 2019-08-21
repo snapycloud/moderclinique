@@ -63,6 +63,8 @@
 
     <!-- jquery latest version -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/vendor/jquery.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
