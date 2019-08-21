@@ -1,6 +1,5 @@
-
-
 @extends('layouts.master')
+@section('pageTitle', 'صفحه اصلی')
 @section('main')
         @include('components.slider_container')
         @include('components.welcome_special_banner')

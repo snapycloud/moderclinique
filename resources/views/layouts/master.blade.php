@@ -6,7 +6,7 @@
     {{-- {!! SEO::generate() !!} --}}
     {!! OpenGraph::generate() !!}
     {!! JsonLd::generate() !!}
-    <title>@yield('pageTitle') | کلینیک تخصصی پوست و مو و زیبایی - مدرن</title>
+    <title> @yield('pageTitle') | کلینیک تخصصی پوست و مو و زیبایی - مدرن</title>
     <meta property="og:title" content="کلینیک تخصصی پوست و مو و زیبایی - مدرن |@yield('pageTitle')" />
     <meta name="description" content="@yield('description')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
