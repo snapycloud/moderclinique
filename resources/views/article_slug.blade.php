@@ -160,10 +160,6 @@
         <span class="fa fa-star-o" data-rating="3"></span>
         <span class="fa fa-star-o" data-rating="4"></span>
         <span class="fa fa-star-o" data-rating="5"></span>
-        <span class="fa fa-star-o" data-rating="6"></span>
-        <span class="fa fa-star-o" data-rating="7"></span>
-        <span class="fa fa-star-o" data-rating="8"></span>
-        <span class="fa fa-star-o" data-rating="9"></span>
         <input type="hidden" name="whatever1" class="rating-value" value="{{ $article['rate'] }}">
       </div>
     </div>
