@@ -27,7 +27,6 @@
                                  <a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}">{{ $item['name'] }}</a>
                                 </h3>
                                 <p>{{ str_limit($item['description'], 100) }}</p>
-                                {{-- <a href="{{ route('knowledgeBaseArticle.slug', $item['slug']) }}" class="btn-more text-right">ادامه مطلب</a> --}}
                             </div>
                         </div>
                     </div>
