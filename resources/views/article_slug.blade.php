@@ -212,7 +212,7 @@
                         </div>
                     </div>
 
-                    @include('components.appointment')
+                    {{-- @include('components.appointment') --}}
 
                     
                  
