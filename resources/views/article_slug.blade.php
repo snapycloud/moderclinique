@@ -215,6 +215,10 @@
                             
                         </div>
                     </div>
+
+                    @include('components.appointment')
+
+                    
                  
 
     

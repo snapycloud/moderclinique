@@ -25,6 +25,17 @@ class Client extends Controller
     	
     	return $this->api()->request('POST', 'lead', $data);
     }
+    public function postComments(Request $req)
+    {
+        $req->validate([
+            'name' => 'required|max:255',
+        ]);
+        // get first and last name form name column
+        $data = $req->all();
+        
+        return $this->api()->request('POST', 'comment', $data);
+    }
+
 
     public function postCotnact(Request $req)
     {
