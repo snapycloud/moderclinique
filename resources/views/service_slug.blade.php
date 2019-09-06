@@ -63,8 +63,8 @@
 
        		{!! $service['body'] !!}
 
-  @section('description')  {!!str_limit(strip_tags($service['body']),160,'...')!!} @endsection
-
+  {{-- @section('description')  {!!str_limit(strip_tags($service['body']),160,'...')!!} @endsection --}}
+@section('description')  {!!str_limit($service['description'],160,'...')!!} @endsection
 
        <div class="special_banner style2">
                 <div class="container">
