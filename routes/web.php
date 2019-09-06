@@ -18,13 +18,17 @@ Route::get('image/{id}', function($id){
     $cache_key = 'slider-' . $id;
     $image = cache()->get($cache_key);
 	$cat = App\Attachment::find($id);
+    //$size = filesize($image);
     if($image) {
+
 	    header('Pragma: public');
+    header("Content-length: 22222");
 	    header('Cache-Control: max-age=360000, must-revalidate');
 	    header('Expires: '. gmdate('D, d M Y H:i:s \G\M\T', time() + 86400));
 	    header('Content-Type: ' . $cat->type);
 
-        echo $image;
+	    echo $image;
+	    return true;
     }
     $id = $cat->id;
     if($cat->source_id) {
@@ -33,8 +37,10 @@ Route::get('image/{id}', function($id){
 
 	//$image = file_get_contents('/home/production/onpermise/5ccc0902cd2ca7d50/data/upload/' . $id );
 	$image = file_get_contents('/home/apps/5ccc0902cd2ca7d50/data/upload/' . $id);
+    $size = filesize($image);
     cache()->put($cache_key, $image);
     header('Pragma: public');
+    header("Content-length: 22222");
 	header('Cache-Control: max-ag  e=360000, must-revalidate');
 	header('Content-Type: ' . $cat->type);
 
