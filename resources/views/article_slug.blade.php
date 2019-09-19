@@ -13,13 +13,17 @@
 .fa-star{color: yellow;}
 </style>
 
+<script>
+  var link = "{{Request::url()}}";
+</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://modernclinique.com/article/recommendations_for_hair_replacement"
+    "@id": link
   },
   "headline": "product",
   "description": "product description",
