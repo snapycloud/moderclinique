@@ -7,6 +7,10 @@
     {!! OpenGraph::generate() !!}
     {!! JsonLd::generate() !!}
     <title> @yield('pageTitle') | کلینیک تخصصی پوست و مو و زیبایی - مدرن</title>
+          <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ Url::current() }}" />
+        <meta property="og:site_name" content="کلینیک تخصصی پوست و مو و زیبایی - مدرن" />
+        <meta property="og:image" content="https://modernclinique.com/images/logo/logo.png" />
     <meta property="og:title" content="کلینیک تخصصی پوست و مو و زیبایی - مدرن |@yield('pageTitle')" />
     <meta name="description" content="@yield('description')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
