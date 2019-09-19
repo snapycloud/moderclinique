@@ -22,29 +22,29 @@
 "datePublished" :"{{ $article['createdAt'] }}",
   "itemReviewed": {
     "@type": "Thing",
-    "image": "{{ route('image', [ $article['coverId'] ]) }}",
-    "name": "{{ $article['name'] }}",
-    "telephone": "021-87700000",
-    "address" :{
+    "@image": "{{ route('image', [ $article['coverId'] ]) }}",
+    "@name": "{{ $article['name'] }}",
+    "@telephone": "021-87700000",
+    "@address" :{
       "@type": "PostalAddress",
-      "streetAddress": "تهران - سعادت آباد بلواردریا بین خیابان گلها و خیابان رامشه پلاک ۷۰ طبقه ۳",
-      "addressLocality": "تهران ",
-        "addressCountry": "تهران "
+      "@streetAddress": "تهران - سعادت آباد بلواردریا بین خیابان گلها و خیابان رامشه پلاک ۷۰ طبقه ۳",
+      "@addressLocality": "تهران ",
+        "@addressCountry": "تهران "
     }
   },
   "reviewRating": {
     "@type": "Rating",
-    "ratingValue": "5"
+    "@ratingValue": "5"
   },
-  "name": "{{ $article['name'] }}",
-  "author": {
+  "@name": "{{ $article['name'] }}",
+  "@author": {
     "@type": "Person",
-    "name": "modernclinique"
+    "@name": "modernclinique"
   },
-  "reviewBody": "{!!str_limit($article['description'],160,'...')!!}",
-  "publisher": {
+  "@reviewBody": "{!!str_limit($article['description'],160,'...')!!}",
+  "@publisher": {
     "@type": "Organization",
-    "name": "modernclinique"
+    "@name": "modernclinique"
   }
 }
 
