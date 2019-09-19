@@ -13,50 +13,40 @@
 .fa-star{color: yellow;}
 </style>
 
- <script type="application/ld+json">
-
-
+script type="application/ld+json">
 {
-  "@context": "https://schema.org/",
-  "@type": "Review",
-"datePublished" :"{{ $article['createdAt'] }}",
-  "itemReviewed": {
-    "@type": "Thing",
-    "@image": "{{ route('image', [ $article['coverId'] ]) }}",
-    "@name": "{{ $article['name'] }}",
-    "@telephone": "021-87700000",
-    "@address" :{
-      "@type": "PostalAddress",
-      "@streetAddress": "تهران - سعادت آباد بلواردریا بین خیابان گلها و خیابان رامشه پلاک ۷۰ طبقه ۳",
-      "@addressLocality": "تهران ",
-        "@addressCountry": "تهران "
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://modernclinique.com/article/recommendations_for_hair_replacement"
+  },
+  "headline": "product",
+  "description": "product description",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://modernclinique.com/article/recommendations_for_hair_replacement",
+    "width": 1000,
+    "height": 400
+  },
+  "author": {
+    "@type": "Person",
+    "name": "modernclinique"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "modernclinique",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://modernclinique.com/images/logo/logo.png",
+      "width": 200,
+      "height": 46
     }
   },
-  "reviewRating": {
-    "@type": "Rating",
-    "@ratingValue": "5"
-  },
-  "@name": "{{ $article['name'] }}",
-  "@author": {
-    "@type": "Person",
-    "@name": "modernclinique"
-  },
-  "@reviewBody": "{!!str_limit($article['description'],160,'...')!!}",
-  "@publisher": {
-    "@type": "Organization",
-    "@name": "modernclinique"
-  }
+  "datePublished": "2019-09-20",
+  "dateModified": "2019-09-20"
 }
-
-
-
-
 </script>
-
-
-
-
-
 <div class="ht__bradcaump__area">
             <div class="container">
                 <div class="row">
@@ -67,32 +57,18 @@
 @section('pageTitle')
     {{ $article['name'] }}
 @endsection
-
-
                         </div>
                     </div>
                 </div>
             </div>
          </div>
 
-
-
-
-
                      @section('description')  {!!str_limit($article['description'],160,'...')!!} @endsection
-
-
-
-
-
         <div class="our_blog_area ptb--100">
             <div class="container">
                 <div class="row">
-
                 <div class="col-lg-4 col-md-8 col-12">
                         <div class="sidebar_right">  
-                             
-
                               <div class="widget recent_post text-right">
                                 <div class="sidebar_title">
                                     <h3>آخرین مطالب</h3>
@@ -122,11 +98,6 @@
                             
                          </div>
                     </div>
-
-
-
-
-
                     <div class="col-lg-8 col-md-12 col-12">
                         <div class="post_details_inner">
                             <div class="single_post_thumbnail">
@@ -207,40 +178,25 @@
                                     </form>
                                 </div>
                             </div> --}}
-                            <!--Comment box end-->
-                            
+                            <!--Comment box end-->  
                         </div>
                     </div>
-
                     {{-- @include('components.appointment') --}}
-
-                    
-                 
-
-    
-                
             </div>
-
             <div class="widget tag text-right">
-                               
                                 @if($article['tags'] != null)
                                 <div class="post_tag">
-                                    
                                         @foreach($article['tags'] as $tag)
                                           <a href="{{ route('tags', $tag) }}">{{ $tag }}</a>,
-                                        @endforeach
-                                    
+                                        @endforeach  
                                 </div>
                                 @endif
                                 <div class="tag_title">
                                     <p> برچسب ها : </p>
                                 </div>
                             </div>
-
                 </div>
         </div>
-
-
     <div style="display: none;" itemscope itemtype=”http://schema.org/Product”>
     <img itemprop="image" src="{{ route('image', [ $article['coverId'] ]) }}" alt="{{ $article['name'] }}"/>
     <span itemprop=”name”>{{ $article['name'] }}</span>
@@ -249,9 +205,4 @@
      از <span itemprop=”bestRating”>10</span>
     </div>
     </div>
-
-
-
-
-
 @stop
