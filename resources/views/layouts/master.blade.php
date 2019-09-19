@@ -10,6 +10,10 @@
     <meta property="og:title" content="کلینیک تخصصی پوست و مو و زیبایی - مدرن |@yield('pageTitle')" />
     <meta name="description" content="@yield('description')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta itemprop="name" content="@yield('pageTitle') | کلینیک تخصصی پوست و مو و زیبایی - مدرن">
+    <meta itemprop="description" content="کلینیک تخصصی پوست و مو و زیبایی - مدرن |@yield('pageTitle')">
+    {{-- <meta itemprop="image" content=""> --}}
     
     <!-- Place favicon.ico in the root directory -->
     {{-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> --}}
