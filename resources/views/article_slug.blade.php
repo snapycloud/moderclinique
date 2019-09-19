@@ -197,12 +197,12 @@
                             </div>
                 </div>
         </div>
-    <div style="display: none;" itemscope itemtype=”http://schema.org/Product”>
+    {{-- <div style="display: none;" itemscope itemtype=”http://schema.org/Product”>
     <img itemprop="image" src="{{ route('image', [ $article['coverId'] ]) }}" alt="{{ $article['name'] }}"/>
     <span itemprop=”name”>{{ $article['name'] }}</span>
     <div itemprop=”aggregateRating itemscope itemtype=”http://schema.org/AggregateRating”>
     <span itemprop=”ratingValue”>{{ $article['rate'] }}</span>
      از <span itemprop=”bestRating”>10</span>
     </div>
-    </div>
+    </div> --}}
 @stop
