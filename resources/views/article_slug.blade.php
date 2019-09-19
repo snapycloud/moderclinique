@@ -23,7 +23,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": link
+    "@id": "{{Request::url()}}"
   },
   "headline": "product",
   "description": "product description",
