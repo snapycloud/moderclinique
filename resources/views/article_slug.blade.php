@@ -13,7 +13,7 @@
 .fa-star{color: yellow;}
 </style>
 
-script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
