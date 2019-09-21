@@ -47,8 +47,8 @@
       "height": 46
     }
   },
-  "datePublished": "{{ $item['createdAt'] }}",
-  "dateModified": "{{ $item['createdAt'] }}"
+  "datePublished": "{{ $article['createdAt'] }}",
+  "dateModified": "{{ $article['createdAt'] }}"
 }
 </script>
 <div class="ht__bradcaump__area">
