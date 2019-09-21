@@ -29,7 +29,7 @@
   "description": "{!!str_limit($article['description'],160,'...')!!}",
   "image": {
     "@type": "ImageObject",
-    "url": "https://modernclinique.com/article/recommendations_for_hair_replacement",
+    "url": "{{url()->current()}}",
     "width": 1000,
     "height": 400
   },
@@ -47,8 +47,8 @@
       "height": 46
     }
   },
-  "datePublished": "2019-09-20",
-  "dateModified": "2019-09-20"
+  "datePublished": "{{ $item['createdAt'] }}",
+  "dateModified": "{{ $item['createdAt'] }}"
 }
 </script>
 <div class="ht__bradcaump__area">

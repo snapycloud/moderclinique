@@ -3,46 +3,46 @@
 @extends('layouts.master')
 @section('main')
 
-<script type="application/ld+json">
 
+
+
+
+
+<script type="application/ld+json">
 {
-  "@context": "https://schema.org/",
-  "@type": "Review",
-"datePublished" :"{{ $service['createdAt'] }}",
-  "itemReviewed": {
-    "@type": "Thing",
-    "image": "{{ route('image', [ $service['coverId'] ]) }}",
-    "name": "{{ $service['name'] }}",
-    "telephone": "021-87700000",
-    "address" :{
-      "@type": "PostalAddress",
-      "streetAddress": "تهران - سعادت آباد بلواردریا بین خیابان گلها و خیابان رامشه پلاک ۷۰ طبقه ۳",
-      "addressLocality": "تهران ",
-        "addressCountry": "تهران "
-    }
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{url()->current()}}"
   },
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "5"
+  "headline": "{{ $article['name'] }}",
+  "description": "{!!str_limit($service['description'],160,'...')!!}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{url()->current()}}",
+    "width": 1000,
+    "height": 400
   },
-  "name": "{{ $service['name'] }}",
   "author": {
     "@type": "Person",
     "name": "modernclinique"
-  },
-  "reviewBody": "{!!str_limit($service['description'],160,'...')!!}",
+  },  
   "publisher": {
     "@type": "Organization",
-    "name": "modernclinique"
-  }
+    "name": "modernclinique",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://modernclinique.com/images/logo/logo.png",
+      "width": 200,
+      "height": 46
+    }
+  },
+  "datePublished": "{{ $service['createdAt'] }}",
+  "dateModified": "{{ $service['createdAt'] }}"
 }
-  
-
-
-
-
-
 </script>
+
 
 <div class="ht__bradcaump__area">
             <div class="container">
