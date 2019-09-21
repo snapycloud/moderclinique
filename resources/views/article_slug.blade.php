@@ -14,7 +14,7 @@
 </style>
 
 <script>
-  var link = "{{Request::url()}}";
+  var link = "{{url()->current()}}";
 </script>
 
 <script type="application/ld+json">
@@ -23,10 +23,10 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{Request::url()}}"
+    "@id": "{{url()->current()}}"
   },
-  "headline": "product",
-  "description": "product description",
+  "headline": "{{ $article['name'] }}",
+  "description": "{!!str_limit($article['description'],160,'...')!!}",
   "image": {
     "@type": "ImageObject",
     "url": "https://modernclinique.com/article/recommendations_for_hair_replacement",
