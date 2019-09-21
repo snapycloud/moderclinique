@@ -8,7 +8,7 @@
     {!! JsonLd::generate() !!}
     <title> @yield('pageTitle') | کلینیک تخصصی پوست و مو و زیبایی - مدرن</title>
           <meta property="og:type" content="website" />
-        <meta property="og:url" content="{{ Url::current() }}" />
+        <meta property="og:url" content="{{ url()->current() }}" />
         <meta property="og:site_name" content="کلینیک تخصصی پوست و مو و زیبایی - مدرن" />
         <meta property="og:image" content="https://modernclinique.com/images/logo/logo.png" />
     <meta property="og:title" content="کلینیک تخصصی پوست و مو و زیبایی - مدرن |@yield('pageTitle')" />
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/plugin.css') }}">
     <link rel="stylesheet" href="{{ asset('css/default.css') }}">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">itemprop
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"> 
 
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
