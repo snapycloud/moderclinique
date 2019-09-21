@@ -16,7 +16,7 @@
     "@type": "WebPage",
     "@id": "{{url()->current()}}"
   },
-  "headline": "{{ $article['name'] }}",
+  "headline": "{{ $service['name'] }}",
   "description": "{!!str_limit($service['description'],160,'...')!!}",
   "image": {
     "@type": "ImageObject",
