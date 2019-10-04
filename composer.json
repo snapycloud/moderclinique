@@ -15,7 +15,8 @@
         "laravel/tinker": "^1.0",
         "morilog/jalali": "^3.1",
         "snapycloud/php-api": "dev-master",
-        "spatie/laravel-image-optimizer": "^1.4"
+        "spatie/laravel-image-optimizer": "^1.4",
+        "laravelium/sitemap": "3.1.*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

@@ -13,6 +13,9 @@ Route::get('article/{slug}', 'PageController@getKnowledgeBaseArticleBySlug')->na
 Route::get('article/tags/{tag}', 'PageController@getKnowledgeBaseArticleByTags')->name('tags');
 
 
+Route::get('/sitemap', 'SitemapController@init')->name('sitemap');
+
+
 
 Route::get('image/{id}', function($id){
     $cache_key = 'slider-' . $id;
