@@ -82,6 +82,13 @@ class Client extends Controller
         return str_replace($farsi_chars, $latin_chars, $str);
     }
 
+    public function postRate(Request $req)
+    {
+        return $this->api()->request('PUT', 'KnowledgeBaseArticle/' . $req->get('id'), [
+            'rate' => $req->get('rate')
+        ]);
+    }
+
     public function postSms(Request $req)
     {
         

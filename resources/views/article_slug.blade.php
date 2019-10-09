@@ -129,14 +129,7 @@
                                                 <li> {{ $article['clidentrate'] }}  امتیاز کاربران</li>
                                                 <li>  <div class="row">
     <div class="col-lg-12">
-      <div class="star-rating">
-        <span class="fa fa-star-o" data-rating="1"></span>
-        <span class="fa fa-star-o" data-rating="2"></span>
-        <span class="fa fa-star-o" data-rating="3"></span>
-        <span class="fa fa-star-o" data-rating="4"></span>
-        <span class="fa fa-star-o" data-rating="5"></span>
-        <input type="hidden" name="whatever1" class="rating-value" value="{{ $article['rate'] }}">
-      </div>
+      <rate :rating-value="{{ $article['rate'] }}.2" :rate-id="'{{ $article['id'] }}'"></rate>
     </div>
   </div>
 </div></li>
