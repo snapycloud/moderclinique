@@ -109,6 +109,7 @@ class PageController extends Controller
 
         $cache_key = 'article-list.' . $slug;
         $data = cache()->get($cache_key);
+        $comments = cache()->get($cache_key . "-comments");
 
         if(!$data) {
              $response = $this->api()->request('get', 'KnowledgeBaseArticle', [
@@ -117,9 +118,13 @@ class PageController extends Controller
                 'where[0][value]' => $slug,
             ]);
             $data = $this->api()->request('get', 'KnowledgeBaseArticle/' . $response['list'][0]['id']);
+            $comments = $this->api()->request('get', 'KnowledgeBaseArticle/' . $response['list'][0]['id'] . "/comments");
 
             cache()->put($cache_key, $data, 600);
+            cache()->put($cache_key . "-comments", $comments, 600);
         }
+
+
 
          $data['body'] = str_replace(
             "?entryPoint=attachment&amp;id=",
@@ -127,11 +132,10 @@ class PageController extends Controller
             $data['body']
         );
 
-         // dd($data);
-
         return view('article_slug', [
             'article' => $data,
-            'data' => $this->getArticaleList() ?? false
+            'data' => $this->getArticaleList() ?? false,
+            'comments' => $comments
         ]);
     }
 

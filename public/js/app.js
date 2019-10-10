@@ -1979,27 +1979,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -38834,188 +38813,45 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "htc__appoinment__form" },
-    [
-      _vm._l(_vm.errors, function(error) {
-        return error
-          ? _c(
-              "div",
-              { staticClass: "alert alert-danger", attrs: { role: "alert" } },
-              [_vm._v("\n      " + _vm._s(error[0]) + "\n    ")]
-            )
-          : _vm._e()
-      }),
+  return _c("div", { staticClass: "comment_box_form" }, [
+    _c("div", { staticClass: "comment_box_title text-right" }, [
+      _c("h3", [_vm._v("پیام بگذارید")]),
       _vm._v(" "),
-      _vm.success
-        ? _c(
-            "div",
-            { staticClass: "alert alert-success", attrs: { role: "alert" } },
-            [_vm._v("\n      .در خواست شما با موفقیت ثبت شد\n    ")]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      !_vm.success
-        ? _c(
-            "form",
-            {
-              on: {
-                submit: function($event) {
-                  $event.preventDefault()
-                  return _vm.onSubmit($event)
-                }
-              }
-            },
-            [
-              _c("div", { staticClass: "htc__app__box__inner" }, [
-                _c("div", { staticClass: "htc__app__box" }, [
-                  _c("div", { staticClass: "input_inner" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.data.name,
-                          expression: "data.name"
-                        }
-                      ],
-                      attrs: {
-                        type: "text",
-                        placeholder: "نام خود را وارد کنید"
-                      },
-                      domProps: { value: _vm.data.name },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.data, "name", $event.target.value)
-                        }
-                      }
-                    })
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "htc__app__box__inner" }, [
-                _c("div", { staticClass: "htc__app__box" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.data.emailAddress,
-                        expression: "data.emailAddress"
-                      }
-                    ],
-                    attrs: {
-                      type: "email",
-                      placeholder: "پست الکترونیک (اختیاری)"
-                    },
-                    domProps: { value: _vm.data.emailAddress },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.$set(_vm.data, "emailAddress", $event.target.value)
-                      }
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "htc__app__box__inner" }, [
-                _c("div", { staticClass: "htc__app__box doctor_select" }, [
-                  _c("div", { staticClass: "doctor_select_inner" }, [
-                    _c(
-                      "select",
-                      {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.data.rate,
-                            expression: "data.rate"
-                          }
-                        ],
-                        on: {
-                          change: function($event) {
-                            var $$selectedVal = Array.prototype.filter
-                              .call($event.target.options, function(o) {
-                                return o.selected
-                              })
-                              .map(function(o) {
-                                var val = "_value" in o ? o._value : o.value
-                                return val
-                              })
-                            _vm.$set(
-                              _vm.data,
-                              "rate",
-                              $event.target.multiple
-                                ? $$selectedVal
-                                : $$selectedVal[0]
-                            )
-                          }
-                        }
-                      },
-                      [
-                        _c("option", { attrs: { value: "1" } }, [_vm._v("۱")]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "2" } }, [_vm._v("۲")]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "3" } }, [_vm._v("۳")]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "4" } }, [_vm._v("۴")]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "5" } }, [_vm._v("۵")])
-                      ]
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "appoinment_message" }, [
-                _c("div", { staticClass: "htc__app__box message" }, [
-                  _c("textarea", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.data.description,
-                        expression: "data.description"
-                      }
-                    ],
-                    attrs: { name: "Message", placeholder: "توضیحات" },
-                    domProps: { value: _vm.data.description },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.$set(_vm.data, "description", $event.target.value)
-                      }
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _vm._m(0)
-              ])
-            ]
-          )
-        : _vm._e()
-    ],
-    2
-  )
+      _vm.error ? _c("p", [_vm._v("لطفا موارد زیر را پر کنید *")]) : _vm._e()
+    ]),
+    _vm._v(" "),
+    _vm._m(0)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ht__appoin__btn" }, [
-      _c("button", { attrs: { type: "submit" } }, [_vm._v("ثبت درخواست")])
+    return _c("div", { staticClass: "leave_comment_form" }, [
+      _c("form", { attrs: { action: "#" } }, [
+        _c("div", { staticClass: "text-areabox" }, [
+          _c("textarea", { attrs: { placeholder: "Type Your Comment *" } })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "input_box half_left" }, [
+          _c("input", { attrs: { type: "text", placeholder: "Your Name *" } })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "input_box half_right" }, [
+          _c("input", { attrs: { type: "email", placeholder: "Your Email *" } })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "input_box" }, [
+          _c("input", { attrs: { type: "text", placeholder: "Your Website" } })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "submit_button_inner" }, [
+          _c("button", { attrs: { type: "submit" } }, [
+            _vm._v("Submit Comment")
+          ])
+        ])
+      ])
     ])
   }
 ]

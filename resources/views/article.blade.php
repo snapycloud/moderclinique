@@ -5,7 +5,7 @@
 
 
         @include('components.article__ht__bradcaump__area')
-        <div class="our_blog_area ptb--100">
+        <div class="our_blog_area" style="margin-top: 10px">
             <div class="container">
                 <div class="row  rtl">
                     @foreach($data as $item)

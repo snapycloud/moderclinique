@@ -148,8 +148,10 @@
 
                             </div>
                             
+                           
+
                             <!--Comment box -->
-{{--                             <div class="comment_box_form">
+                            <div class="comment_box_form">
                                 <div class="comment_box_title">
                                     <h3>پیام بگذارید</h3>
                                     <p>Your email address will not be published. Required fields are marked *</p>
@@ -174,7 +176,7 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div> --}}
+                            </div>
                             <!--Comment box end-->  
                         </div>
                     </div>
@@ -194,6 +196,8 @@
                             </div>
                 </div>
         </div>
+
+
     {{-- <div style="display: none;" itemscope itemtype=”http://schema.org/Product”>
     <img itemprop="image" src="{{ route('image', [ $article['coverId'] ]) }}" alt="{{ $article['name'] }}"/>
     <span itemprop=”name”>{{ $article['name'] }}</span>
